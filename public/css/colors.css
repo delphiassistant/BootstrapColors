@@ -1,0 +1,3080 @@
+/* src/scss/colors.scss
+   Per-shade utilities for Bootstrap 5.3 "All colors" (blue/indigo/purple/pink/red/orange/yellow/green/teal/cyan/gray).
+   Outputs:
+     .text-<hue>-<shade>, .bg-<hue>-<shade>, .border-<hue>-<shade>, .text-bg-<hue>-<shade>
+   These are additive; they do not override Bootstrap's own utilities.
+*/
+/* Collect all hue maps exactly as in Bootstrap's docs */
+/* Core utilities */
+.text-blue-100 {
+  color: rgb(206.6, 226, 254.6) !important;
+}
+
+.bg-blue-100 {
+  background-color: rgb(206.6, 226, 254.6) !important;
+}
+
+.border-blue-100 {
+  border-color: rgb(206.6, 226, 254.6) !important;
+}
+
+.text-blue-200 {
+  color: rgb(158.2, 197, 254.2) !important;
+}
+
+.bg-blue-200 {
+  background-color: rgb(158.2, 197, 254.2) !important;
+}
+
+.border-blue-200 {
+  border-color: rgb(158.2, 197, 254.2) !important;
+}
+
+.text-blue-300 {
+  color: rgb(109.8, 168, 253.8) !important;
+}
+
+.bg-blue-300 {
+  background-color: rgb(109.8, 168, 253.8) !important;
+}
+
+.border-blue-300 {
+  border-color: rgb(109.8, 168, 253.8) !important;
+}
+
+.text-blue-400 {
+  color: rgb(61.4, 139, 253.4) !important;
+}
+
+.bg-blue-400 {
+  background-color: rgb(61.4, 139, 253.4) !important;
+}
+
+.border-blue-400 {
+  border-color: rgb(61.4, 139, 253.4) !important;
+}
+
+.text-blue-500 {
+  color: #0d6efd !important;
+}
+
+.bg-blue-500 {
+  background-color: #0d6efd !important;
+}
+
+.border-blue-500 {
+  border-color: #0d6efd !important;
+}
+
+.text-blue-600 {
+  color: rgb(10.4, 88, 202.4) !important;
+}
+
+.bg-blue-600 {
+  background-color: rgb(10.4, 88, 202.4) !important;
+}
+
+.border-blue-600 {
+  border-color: rgb(10.4, 88, 202.4) !important;
+}
+
+.text-blue-700 {
+  color: rgb(7.8, 66, 151.8) !important;
+}
+
+.bg-blue-700 {
+  background-color: rgb(7.8, 66, 151.8) !important;
+}
+
+.border-blue-700 {
+  border-color: rgb(7.8, 66, 151.8) !important;
+}
+
+.text-blue-800 {
+  color: rgb(5.2, 44, 101.2) !important;
+}
+
+.bg-blue-800 {
+  background-color: rgb(5.2, 44, 101.2) !important;
+}
+
+.border-blue-800 {
+  border-color: rgb(5.2, 44, 101.2) !important;
+}
+
+.text-blue-900 {
+  color: rgb(2.6, 22, 50.6) !important;
+}
+
+.bg-blue-900 {
+  background-color: rgb(2.6, 22, 50.6) !important;
+}
+
+.border-blue-900 {
+  border-color: rgb(2.6, 22, 50.6) !important;
+}
+
+.text-indigo-100 {
+  color: rgb(224.4, 207.2, 252.4) !important;
+}
+
+.bg-indigo-100 {
+  background-color: rgb(224.4, 207.2, 252.4) !important;
+}
+
+.border-indigo-100 {
+  border-color: rgb(224.4, 207.2, 252.4) !important;
+}
+
+.text-indigo-200 {
+  color: rgb(193.8, 159.4, 249.8) !important;
+}
+
+.bg-indigo-200 {
+  background-color: rgb(193.8, 159.4, 249.8) !important;
+}
+
+.border-indigo-200 {
+  border-color: rgb(193.8, 159.4, 249.8) !important;
+}
+
+.text-indigo-300 {
+  color: rgb(163.2, 111.6, 247.2) !important;
+}
+
+.bg-indigo-300 {
+  background-color: rgb(163.2, 111.6, 247.2) !important;
+}
+
+.border-indigo-300 {
+  border-color: rgb(163.2, 111.6, 247.2) !important;
+}
+
+.text-indigo-400 {
+  color: rgb(132.6, 63.8, 244.6) !important;
+}
+
+.bg-indigo-400 {
+  background-color: rgb(132.6, 63.8, 244.6) !important;
+}
+
+.border-indigo-400 {
+  border-color: rgb(132.6, 63.8, 244.6) !important;
+}
+
+.text-indigo-500 {
+  color: #6610f2 !important;
+}
+
+.bg-indigo-500 {
+  background-color: #6610f2 !important;
+}
+
+.border-indigo-500 {
+  border-color: #6610f2 !important;
+}
+
+.text-indigo-600 {
+  color: rgb(81.6, 12.8, 193.6) !important;
+}
+
+.bg-indigo-600 {
+  background-color: rgb(81.6, 12.8, 193.6) !important;
+}
+
+.border-indigo-600 {
+  border-color: rgb(81.6, 12.8, 193.6) !important;
+}
+
+.text-indigo-700 {
+  color: rgb(61.2, 9.6, 145.2) !important;
+}
+
+.bg-indigo-700 {
+  background-color: rgb(61.2, 9.6, 145.2) !important;
+}
+
+.border-indigo-700 {
+  border-color: rgb(61.2, 9.6, 145.2) !important;
+}
+
+.text-indigo-800 {
+  color: rgb(40.8, 6.4, 96.8) !important;
+}
+
+.bg-indigo-800 {
+  background-color: rgb(40.8, 6.4, 96.8) !important;
+}
+
+.border-indigo-800 {
+  border-color: rgb(40.8, 6.4, 96.8) !important;
+}
+
+.text-indigo-900 {
+  color: rgb(20.4, 3.2, 48.4) !important;
+}
+
+.bg-indigo-900 {
+  background-color: rgb(20.4, 3.2, 48.4) !important;
+}
+
+.border-indigo-900 {
+  border-color: rgb(20.4, 3.2, 48.4) !important;
+}
+
+.text-purple-100 {
+  color: rgb(226.2, 217.2, 242.6) !important;
+}
+
+.bg-purple-100 {
+  background-color: rgb(226.2, 217.2, 242.6) !important;
+}
+
+.border-purple-100 {
+  border-color: rgb(226.2, 217.2, 242.6) !important;
+}
+
+.text-purple-200 {
+  color: rgb(197.4, 179.4, 230.2) !important;
+}
+
+.bg-purple-200 {
+  background-color: rgb(197.4, 179.4, 230.2) !important;
+}
+
+.border-purple-200 {
+  border-color: rgb(197.4, 179.4, 230.2) !important;
+}
+
+.text-purple-300 {
+  color: rgb(168.6, 141.6, 217.8) !important;
+}
+
+.bg-purple-300 {
+  background-color: rgb(168.6, 141.6, 217.8) !important;
+}
+
+.border-purple-300 {
+  border-color: rgb(168.6, 141.6, 217.8) !important;
+}
+
+.text-purple-400 {
+  color: rgb(139.8, 103.8, 205.4) !important;
+}
+
+.bg-purple-400 {
+  background-color: rgb(139.8, 103.8, 205.4) !important;
+}
+
+.border-purple-400 {
+  border-color: rgb(139.8, 103.8, 205.4) !important;
+}
+
+.text-purple-500 {
+  color: #6f42c1 !important;
+}
+
+.bg-purple-500 {
+  background-color: #6f42c1 !important;
+}
+
+.border-purple-500 {
+  border-color: #6f42c1 !important;
+}
+
+.text-purple-600 {
+  color: rgb(88.8, 52.8, 154.4) !important;
+}
+
+.bg-purple-600 {
+  background-color: rgb(88.8, 52.8, 154.4) !important;
+}
+
+.border-purple-600 {
+  border-color: rgb(88.8, 52.8, 154.4) !important;
+}
+
+.text-purple-700 {
+  color: rgb(66.6, 39.6, 115.8) !important;
+}
+
+.bg-purple-700 {
+  background-color: rgb(66.6, 39.6, 115.8) !important;
+}
+
+.border-purple-700 {
+  border-color: rgb(66.6, 39.6, 115.8) !important;
+}
+
+.text-purple-800 {
+  color: rgb(44.4, 26.4, 77.2) !important;
+}
+
+.bg-purple-800 {
+  background-color: rgb(44.4, 26.4, 77.2) !important;
+}
+
+.border-purple-800 {
+  border-color: rgb(44.4, 26.4, 77.2) !important;
+}
+
+.text-purple-900 {
+  color: rgb(22.2, 13.2, 38.6) !important;
+}
+
+.bg-purple-900 {
+  background-color: rgb(22.2, 13.2, 38.6) !important;
+}
+
+.border-purple-900 {
+  border-color: rgb(22.2, 13.2, 38.6) !important;
+}
+
+.text-pink-100 {
+  color: rgb(246.8, 214.2, 230.4) !important;
+}
+
+.bg-pink-100 {
+  background-color: rgb(246.8, 214.2, 230.4) !important;
+}
+
+.border-pink-100 {
+  border-color: rgb(246.8, 214.2, 230.4) !important;
+}
+
+.text-pink-200 {
+  color: rgb(238.6, 173.4, 205.8) !important;
+}
+
+.bg-pink-200 {
+  background-color: rgb(238.6, 173.4, 205.8) !important;
+}
+
+.border-pink-200 {
+  border-color: rgb(238.6, 173.4, 205.8) !important;
+}
+
+.text-pink-300 {
+  color: rgb(230.4, 132.6, 181.2) !important;
+}
+
+.bg-pink-300 {
+  background-color: rgb(230.4, 132.6, 181.2) !important;
+}
+
+.border-pink-300 {
+  border-color: rgb(230.4, 132.6, 181.2) !important;
+}
+
+.text-pink-400 {
+  color: rgb(222.2, 91.8, 156.6) !important;
+}
+
+.bg-pink-400 {
+  background-color: rgb(222.2, 91.8, 156.6) !important;
+}
+
+.border-pink-400 {
+  border-color: rgb(222.2, 91.8, 156.6) !important;
+}
+
+.text-pink-500 {
+  color: #d63384 !important;
+}
+
+.bg-pink-500 {
+  background-color: #d63384 !important;
+}
+
+.border-pink-500 {
+  border-color: #d63384 !important;
+}
+
+.text-pink-600 {
+  color: rgb(171.2, 40.8, 105.6) !important;
+}
+
+.bg-pink-600 {
+  background-color: rgb(171.2, 40.8, 105.6) !important;
+}
+
+.border-pink-600 {
+  border-color: rgb(171.2, 40.8, 105.6) !important;
+}
+
+.text-pink-700 {
+  color: rgb(128.4, 30.6, 79.2) !important;
+}
+
+.bg-pink-700 {
+  background-color: rgb(128.4, 30.6, 79.2) !important;
+}
+
+.border-pink-700 {
+  border-color: rgb(128.4, 30.6, 79.2) !important;
+}
+
+.text-pink-800 {
+  color: rgb(85.6, 20.4, 52.8) !important;
+}
+
+.bg-pink-800 {
+  background-color: rgb(85.6, 20.4, 52.8) !important;
+}
+
+.border-pink-800 {
+  border-color: rgb(85.6, 20.4, 52.8) !important;
+}
+
+.text-pink-900 {
+  color: rgb(42.8, 10.2, 26.4) !important;
+}
+
+.bg-pink-900 {
+  background-color: rgb(42.8, 10.2, 26.4) !important;
+}
+
+.border-pink-900 {
+  border-color: rgb(42.8, 10.2, 26.4) !important;
+}
+
+.text-red-100 {
+  color: rgb(248, 214.6, 217.8) !important;
+}
+
+.bg-red-100 {
+  background-color: rgb(248, 214.6, 217.8) !important;
+}
+
+.border-red-100 {
+  border-color: rgb(248, 214.6, 217.8) !important;
+}
+
+.text-red-200 {
+  color: rgb(241, 174.2, 180.6) !important;
+}
+
+.bg-red-200 {
+  background-color: rgb(241, 174.2, 180.6) !important;
+}
+
+.border-red-200 {
+  border-color: rgb(241, 174.2, 180.6) !important;
+}
+
+.text-red-300 {
+  color: rgb(234, 133.8, 143.4) !important;
+}
+
+.bg-red-300 {
+  background-color: rgb(234, 133.8, 143.4) !important;
+}
+
+.border-red-300 {
+  border-color: rgb(234, 133.8, 143.4) !important;
+}
+
+.text-red-400 {
+  color: rgb(227, 93.4, 106.2) !important;
+}
+
+.bg-red-400 {
+  background-color: rgb(227, 93.4, 106.2) !important;
+}
+
+.border-red-400 {
+  border-color: rgb(227, 93.4, 106.2) !important;
+}
+
+.text-red-500 {
+  color: #dc3545 !important;
+}
+
+.bg-red-500 {
+  background-color: #dc3545 !important;
+}
+
+.border-red-500 {
+  border-color: #dc3545 !important;
+}
+
+.text-red-600 {
+  color: rgb(176, 42.4, 55.2) !important;
+}
+
+.bg-red-600 {
+  background-color: rgb(176, 42.4, 55.2) !important;
+}
+
+.border-red-600 {
+  border-color: rgb(176, 42.4, 55.2) !important;
+}
+
+.text-red-700 {
+  color: rgb(132, 31.8, 41.4) !important;
+}
+
+.bg-red-700 {
+  background-color: rgb(132, 31.8, 41.4) !important;
+}
+
+.border-red-700 {
+  border-color: rgb(132, 31.8, 41.4) !important;
+}
+
+.text-red-800 {
+  color: rgb(88, 21.2, 27.6) !important;
+}
+
+.bg-red-800 {
+  background-color: rgb(88, 21.2, 27.6) !important;
+}
+
+.border-red-800 {
+  border-color: rgb(88, 21.2, 27.6) !important;
+}
+
+.text-red-900 {
+  color: rgb(44, 10.6, 13.8) !important;
+}
+
+.bg-red-900 {
+  background-color: rgb(44, 10.6, 13.8) !important;
+}
+
+.border-red-900 {
+  border-color: rgb(44, 10.6, 13.8) !important;
+}
+
+.text-orange-100 {
+  color: rgb(254.6, 229.2, 208) !important;
+}
+
+.bg-orange-100 {
+  background-color: rgb(254.6, 229.2, 208) !important;
+}
+
+.border-orange-100 {
+  border-color: rgb(254.6, 229.2, 208) !important;
+}
+
+.text-orange-200 {
+  color: rgb(254.2, 203.4, 161) !important;
+}
+
+.bg-orange-200 {
+  background-color: rgb(254.2, 203.4, 161) !important;
+}
+
+.border-orange-200 {
+  border-color: rgb(254.2, 203.4, 161) !important;
+}
+
+.text-orange-300 {
+  color: rgb(253.8, 177.6, 114) !important;
+}
+
+.bg-orange-300 {
+  background-color: rgb(253.8, 177.6, 114) !important;
+}
+
+.border-orange-300 {
+  border-color: rgb(253.8, 177.6, 114) !important;
+}
+
+.text-orange-400 {
+  color: rgb(253.4, 151.8, 67) !important;
+}
+
+.bg-orange-400 {
+  background-color: rgb(253.4, 151.8, 67) !important;
+}
+
+.border-orange-400 {
+  border-color: rgb(253.4, 151.8, 67) !important;
+}
+
+.text-orange-500 {
+  color: #fd7e14 !important;
+}
+
+.bg-orange-500 {
+  background-color: #fd7e14 !important;
+}
+
+.border-orange-500 {
+  border-color: #fd7e14 !important;
+}
+
+.text-orange-600 {
+  color: rgb(202.4, 100.8, 16) !important;
+}
+
+.bg-orange-600 {
+  background-color: rgb(202.4, 100.8, 16) !important;
+}
+
+.border-orange-600 {
+  border-color: rgb(202.4, 100.8, 16) !important;
+}
+
+.text-orange-700 {
+  color: rgb(151.8, 75.6, 12) !important;
+}
+
+.bg-orange-700 {
+  background-color: rgb(151.8, 75.6, 12) !important;
+}
+
+.border-orange-700 {
+  border-color: rgb(151.8, 75.6, 12) !important;
+}
+
+.text-orange-800 {
+  color: rgb(101.2, 50.4, 8) !important;
+}
+
+.bg-orange-800 {
+  background-color: rgb(101.2, 50.4, 8) !important;
+}
+
+.border-orange-800 {
+  border-color: rgb(101.2, 50.4, 8) !important;
+}
+
+.text-orange-900 {
+  color: rgb(50.6, 25.2, 4) !important;
+}
+
+.bg-orange-900 {
+  background-color: rgb(50.6, 25.2, 4) !important;
+}
+
+.border-orange-900 {
+  border-color: rgb(50.6, 25.2, 4) !important;
+}
+
+.text-yellow-100 {
+  color: rgb(255, 242.6, 205.4) !important;
+}
+
+.bg-yellow-100 {
+  background-color: rgb(255, 242.6, 205.4) !important;
+}
+
+.border-yellow-100 {
+  border-color: rgb(255, 242.6, 205.4) !important;
+}
+
+.text-yellow-200 {
+  color: rgb(255, 230.2, 155.8) !important;
+}
+
+.bg-yellow-200 {
+  background-color: rgb(255, 230.2, 155.8) !important;
+}
+
+.border-yellow-200 {
+  border-color: rgb(255, 230.2, 155.8) !important;
+}
+
+.text-yellow-300 {
+  color: rgb(255, 217.8, 106.2) !important;
+}
+
+.bg-yellow-300 {
+  background-color: rgb(255, 217.8, 106.2) !important;
+}
+
+.border-yellow-300 {
+  border-color: rgb(255, 217.8, 106.2) !important;
+}
+
+.text-yellow-400 {
+  color: rgb(255, 205.4, 56.6) !important;
+}
+
+.bg-yellow-400 {
+  background-color: rgb(255, 205.4, 56.6) !important;
+}
+
+.border-yellow-400 {
+  border-color: rgb(255, 205.4, 56.6) !important;
+}
+
+.text-yellow-500 {
+  color: #ffc107 !important;
+}
+
+.bg-yellow-500 {
+  background-color: #ffc107 !important;
+}
+
+.border-yellow-500 {
+  border-color: #ffc107 !important;
+}
+
+.text-yellow-600 {
+  color: rgb(204, 154.4, 5.6) !important;
+}
+
+.bg-yellow-600 {
+  background-color: rgb(204, 154.4, 5.6) !important;
+}
+
+.border-yellow-600 {
+  border-color: rgb(204, 154.4, 5.6) !important;
+}
+
+.text-yellow-700 {
+  color: rgb(153, 115.8, 4.2) !important;
+}
+
+.bg-yellow-700 {
+  background-color: rgb(153, 115.8, 4.2) !important;
+}
+
+.border-yellow-700 {
+  border-color: rgb(153, 115.8, 4.2) !important;
+}
+
+.text-yellow-800 {
+  color: rgb(102, 77.2, 2.8) !important;
+}
+
+.bg-yellow-800 {
+  background-color: rgb(102, 77.2, 2.8) !important;
+}
+
+.border-yellow-800 {
+  border-color: rgb(102, 77.2, 2.8) !important;
+}
+
+.text-yellow-900 {
+  color: rgb(51, 38.6, 1.4) !important;
+}
+
+.bg-yellow-900 {
+  background-color: rgb(51, 38.6, 1.4) !important;
+}
+
+.border-yellow-900 {
+  border-color: rgb(51, 38.6, 1.4) !important;
+}
+
+.text-green-100 {
+  color: rgb(209, 231, 220.8) !important;
+}
+
+.bg-green-100 {
+  background-color: rgb(209, 231, 220.8) !important;
+}
+
+.border-green-100 {
+  border-color: rgb(209, 231, 220.8) !important;
+}
+
+.text-green-200 {
+  color: rgb(163, 207, 186.6) !important;
+}
+
+.bg-green-200 {
+  background-color: rgb(163, 207, 186.6) !important;
+}
+
+.border-green-200 {
+  border-color: rgb(163, 207, 186.6) !important;
+}
+
+.text-green-300 {
+  color: rgb(117, 183, 152.4) !important;
+}
+
+.bg-green-300 {
+  background-color: rgb(117, 183, 152.4) !important;
+}
+
+.border-green-300 {
+  border-color: rgb(117, 183, 152.4) !important;
+}
+
+.text-green-400 {
+  color: rgb(71, 159, 118.2) !important;
+}
+
+.bg-green-400 {
+  background-color: rgb(71, 159, 118.2) !important;
+}
+
+.border-green-400 {
+  border-color: rgb(71, 159, 118.2) !important;
+}
+
+.text-green-500 {
+  color: #198754 !important;
+}
+
+.bg-green-500 {
+  background-color: #198754 !important;
+}
+
+.border-green-500 {
+  border-color: #198754 !important;
+}
+
+.text-green-600 {
+  color: rgb(20, 108, 67.2) !important;
+}
+
+.bg-green-600 {
+  background-color: rgb(20, 108, 67.2) !important;
+}
+
+.border-green-600 {
+  border-color: rgb(20, 108, 67.2) !important;
+}
+
+.text-green-700 {
+  color: rgb(15, 81, 50.4) !important;
+}
+
+.bg-green-700 {
+  background-color: rgb(15, 81, 50.4) !important;
+}
+
+.border-green-700 {
+  border-color: rgb(15, 81, 50.4) !important;
+}
+
+.text-green-800 {
+  color: rgb(10, 54, 33.6) !important;
+}
+
+.bg-green-800 {
+  background-color: rgb(10, 54, 33.6) !important;
+}
+
+.border-green-800 {
+  border-color: rgb(10, 54, 33.6) !important;
+}
+
+.text-green-900 {
+  color: rgb(5, 27, 16.8) !important;
+}
+
+.bg-green-900 {
+  background-color: rgb(5, 27, 16.8) !important;
+}
+
+.border-green-900 {
+  border-color: rgb(5, 27, 16.8) !important;
+}
+
+.text-teal-100 {
+  color: rgb(210.4, 244.2, 234.2) !important;
+}
+
+.bg-teal-100 {
+  background-color: rgb(210.4, 244.2, 234.2) !important;
+}
+
+.border-teal-100 {
+  border-color: rgb(210.4, 244.2, 234.2) !important;
+}
+
+.text-teal-200 {
+  color: rgb(165.8, 233.4, 213.4) !important;
+}
+
+.bg-teal-200 {
+  background-color: rgb(165.8, 233.4, 213.4) !important;
+}
+
+.border-teal-200 {
+  border-color: rgb(165.8, 233.4, 213.4) !important;
+}
+
+.text-teal-300 {
+  color: rgb(121.2, 222.6, 192.6) !important;
+}
+
+.bg-teal-300 {
+  background-color: rgb(121.2, 222.6, 192.6) !important;
+}
+
+.border-teal-300 {
+  border-color: rgb(121.2, 222.6, 192.6) !important;
+}
+
+.text-teal-400 {
+  color: rgb(76.6, 211.8, 171.8) !important;
+}
+
+.bg-teal-400 {
+  background-color: rgb(76.6, 211.8, 171.8) !important;
+}
+
+.border-teal-400 {
+  border-color: rgb(76.6, 211.8, 171.8) !important;
+}
+
+.text-teal-500 {
+  color: #20c997 !important;
+}
+
+.bg-teal-500 {
+  background-color: #20c997 !important;
+}
+
+.border-teal-500 {
+  border-color: #20c997 !important;
+}
+
+.text-teal-600 {
+  color: rgb(25.6, 160.8, 120.8) !important;
+}
+
+.bg-teal-600 {
+  background-color: rgb(25.6, 160.8, 120.8) !important;
+}
+
+.border-teal-600 {
+  border-color: rgb(25.6, 160.8, 120.8) !important;
+}
+
+.text-teal-700 {
+  color: rgb(19.2, 120.6, 90.6) !important;
+}
+
+.bg-teal-700 {
+  background-color: rgb(19.2, 120.6, 90.6) !important;
+}
+
+.border-teal-700 {
+  border-color: rgb(19.2, 120.6, 90.6) !important;
+}
+
+.text-teal-800 {
+  color: rgb(12.8, 80.4, 60.4) !important;
+}
+
+.bg-teal-800 {
+  background-color: rgb(12.8, 80.4, 60.4) !important;
+}
+
+.border-teal-800 {
+  border-color: rgb(12.8, 80.4, 60.4) !important;
+}
+
+.text-teal-900 {
+  color: rgb(6.4, 40.2, 30.2) !important;
+}
+
+.bg-teal-900 {
+  background-color: rgb(6.4, 40.2, 30.2) !important;
+}
+
+.border-teal-900 {
+  border-color: rgb(6.4, 40.2, 30.2) !important;
+}
+
+.text-cyan-100 {
+  color: rgb(206.6, 244.4, 252) !important;
+}
+
+.bg-cyan-100 {
+  background-color: rgb(206.6, 244.4, 252) !important;
+}
+
+.border-cyan-100 {
+  border-color: rgb(206.6, 244.4, 252) !important;
+}
+
+.text-cyan-200 {
+  color: rgb(158.2, 233.8, 249) !important;
+}
+
+.bg-cyan-200 {
+  background-color: rgb(158.2, 233.8, 249) !important;
+}
+
+.border-cyan-200 {
+  border-color: rgb(158.2, 233.8, 249) !important;
+}
+
+.text-cyan-300 {
+  color: rgb(109.8, 223.2, 246) !important;
+}
+
+.bg-cyan-300 {
+  background-color: rgb(109.8, 223.2, 246) !important;
+}
+
+.border-cyan-300 {
+  border-color: rgb(109.8, 223.2, 246) !important;
+}
+
+.text-cyan-400 {
+  color: rgb(61.4, 212.6, 243) !important;
+}
+
+.bg-cyan-400 {
+  background-color: rgb(61.4, 212.6, 243) !important;
+}
+
+.border-cyan-400 {
+  border-color: rgb(61.4, 212.6, 243) !important;
+}
+
+.text-cyan-500 {
+  color: #0dcaf0 !important;
+}
+
+.bg-cyan-500 {
+  background-color: #0dcaf0 !important;
+}
+
+.border-cyan-500 {
+  border-color: #0dcaf0 !important;
+}
+
+.text-cyan-600 {
+  color: rgb(10.4, 161.6, 192) !important;
+}
+
+.bg-cyan-600 {
+  background-color: rgb(10.4, 161.6, 192) !important;
+}
+
+.border-cyan-600 {
+  border-color: rgb(10.4, 161.6, 192) !important;
+}
+
+.text-cyan-700 {
+  color: rgb(7.8, 121.2, 144) !important;
+}
+
+.bg-cyan-700 {
+  background-color: rgb(7.8, 121.2, 144) !important;
+}
+
+.border-cyan-700 {
+  border-color: rgb(7.8, 121.2, 144) !important;
+}
+
+.text-cyan-800 {
+  color: rgb(5.2, 80.8, 96) !important;
+}
+
+.bg-cyan-800 {
+  background-color: rgb(5.2, 80.8, 96) !important;
+}
+
+.border-cyan-800 {
+  border-color: rgb(5.2, 80.8, 96) !important;
+}
+
+.text-cyan-900 {
+  color: rgb(2.6, 40.4, 48) !important;
+}
+
+.bg-cyan-900 {
+  background-color: rgb(2.6, 40.4, 48) !important;
+}
+
+.border-cyan-900 {
+  border-color: rgb(2.6, 40.4, 48) !important;
+}
+
+.text-100 {
+  color: #f8f9fa !important;
+}
+
+.bg-100 {
+  background-color: #f8f9fa !important;
+}
+
+.border-100 {
+  border-color: #f8f9fa !important;
+}
+
+.text-200 {
+  color: #e9ecef !important;
+}
+
+.bg-200 {
+  background-color: #e9ecef !important;
+}
+
+.border-200 {
+  border-color: #e9ecef !important;
+}
+
+.text-300 {
+  color: #dee2e6 !important;
+}
+
+.bg-300 {
+  background-color: #dee2e6 !important;
+}
+
+.border-300 {
+  border-color: #dee2e6 !important;
+}
+
+.text-400 {
+  color: #ced4da !important;
+}
+
+.bg-400 {
+  background-color: #ced4da !important;
+}
+
+.border-400 {
+  border-color: #ced4da !important;
+}
+
+.text-500 {
+  color: #adb5bd !important;
+}
+
+.bg-500 {
+  background-color: #adb5bd !important;
+}
+
+.border-500 {
+  border-color: #adb5bd !important;
+}
+
+.text-600 {
+  color: #6c757d !important;
+}
+
+.bg-600 {
+  background-color: #6c757d !important;
+}
+
+.border-600 {
+  border-color: #6c757d !important;
+}
+
+.text-700 {
+  color: #495057 !important;
+}
+
+.bg-700 {
+  background-color: #495057 !important;
+}
+
+.border-700 {
+  border-color: #495057 !important;
+}
+
+.text-800 {
+  color: #343a40 !important;
+}
+
+.bg-800 {
+  background-color: #343a40 !important;
+}
+
+.border-800 {
+  border-color: #343a40 !important;
+}
+
+.text-900 {
+  color: #212529 !important;
+}
+
+.bg-900 {
+  background-color: #212529 !important;
+}
+
+.border-900 {
+  border-color: #212529 !important;
+}
+
+/* Accent chip with automatic readable text using Bootstrap's color-contrast() */
+.text-bg-blue-100 {
+  --_bg: rgb(206.6, 226, 254.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-200 {
+  --_bg: rgb(158.2, 197, 254.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-300 {
+  --_bg: rgb(109.8, 168, 253.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-400 {
+  --_bg: rgb(61.4, 139, 253.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-500 {
+  --_bg: #0d6efd;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-600 {
+  --_bg: rgb(10.4, 88, 202.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-700 {
+  --_bg: rgb(7.8, 66, 151.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-800 {
+  --_bg: rgb(5.2, 44, 101.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-blue-900 {
+  --_bg: rgb(2.6, 22, 50.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-100 {
+  --_bg: rgb(224.4, 207.2, 252.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-200 {
+  --_bg: rgb(193.8, 159.4, 249.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-300 {
+  --_bg: rgb(163.2, 111.6, 247.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-400 {
+  --_bg: rgb(132.6, 63.8, 244.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-500 {
+  --_bg: #6610f2;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-600 {
+  --_bg: rgb(81.6, 12.8, 193.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-700 {
+  --_bg: rgb(61.2, 9.6, 145.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-800 {
+  --_bg: rgb(40.8, 6.4, 96.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-indigo-900 {
+  --_bg: rgb(20.4, 3.2, 48.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-100 {
+  --_bg: rgb(226.2, 217.2, 242.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-200 {
+  --_bg: rgb(197.4, 179.4, 230.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-300 {
+  --_bg: rgb(168.6, 141.6, 217.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-400 {
+  --_bg: rgb(139.8, 103.8, 205.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-500 {
+  --_bg: #6f42c1;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-600 {
+  --_bg: rgb(88.8, 52.8, 154.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-700 {
+  --_bg: rgb(66.6, 39.6, 115.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-800 {
+  --_bg: rgb(44.4, 26.4, 77.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-purple-900 {
+  --_bg: rgb(22.2, 13.2, 38.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-100 {
+  --_bg: rgb(246.8, 214.2, 230.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-200 {
+  --_bg: rgb(238.6, 173.4, 205.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-300 {
+  --_bg: rgb(230.4, 132.6, 181.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-400 {
+  --_bg: rgb(222.2, 91.8, 156.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-500 {
+  --_bg: #d63384;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-600 {
+  --_bg: rgb(171.2, 40.8, 105.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-700 {
+  --_bg: rgb(128.4, 30.6, 79.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-800 {
+  --_bg: rgb(85.6, 20.4, 52.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-pink-900 {
+  --_bg: rgb(42.8, 10.2, 26.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-100 {
+  --_bg: rgb(248, 214.6, 217.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-200 {
+  --_bg: rgb(241, 174.2, 180.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-300 {
+  --_bg: rgb(234, 133.8, 143.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-400 {
+  --_bg: rgb(227, 93.4, 106.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-500 {
+  --_bg: #dc3545;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-600 {
+  --_bg: rgb(176, 42.4, 55.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-700 {
+  --_bg: rgb(132, 31.8, 41.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-800 {
+  --_bg: rgb(88, 21.2, 27.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-red-900 {
+  --_bg: rgb(44, 10.6, 13.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-100 {
+  --_bg: rgb(254.6, 229.2, 208);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-200 {
+  --_bg: rgb(254.2, 203.4, 161);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-300 {
+  --_bg: rgb(253.8, 177.6, 114);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-400 {
+  --_bg: rgb(253.4, 151.8, 67);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-500 {
+  --_bg: #fd7e14;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-600 {
+  --_bg: rgb(202.4, 100.8, 16);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-700 {
+  --_bg: rgb(151.8, 75.6, 12);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-800 {
+  --_bg: rgb(101.2, 50.4, 8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-orange-900 {
+  --_bg: rgb(50.6, 25.2, 4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-100 {
+  --_bg: rgb(255, 242.6, 205.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-200 {
+  --_bg: rgb(255, 230.2, 155.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-300 {
+  --_bg: rgb(255, 217.8, 106.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-400 {
+  --_bg: rgb(255, 205.4, 56.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-500 {
+  --_bg: #ffc107;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-600 {
+  --_bg: rgb(204, 154.4, 5.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-700 {
+  --_bg: rgb(153, 115.8, 4.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-800 {
+  --_bg: rgb(102, 77.2, 2.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-yellow-900 {
+  --_bg: rgb(51, 38.6, 1.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-100 {
+  --_bg: rgb(209, 231, 220.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-200 {
+  --_bg: rgb(163, 207, 186.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-300 {
+  --_bg: rgb(117, 183, 152.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-400 {
+  --_bg: rgb(71, 159, 118.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-500 {
+  --_bg: #198754;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-600 {
+  --_bg: rgb(20, 108, 67.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-700 {
+  --_bg: rgb(15, 81, 50.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-800 {
+  --_bg: rgb(10, 54, 33.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-green-900 {
+  --_bg: rgb(5, 27, 16.8);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-100 {
+  --_bg: rgb(210.4, 244.2, 234.2);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-200 {
+  --_bg: rgb(165.8, 233.4, 213.4);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-300 {
+  --_bg: rgb(121.2, 222.6, 192.6);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-400 {
+  --_bg: rgb(76.6, 211.8, 171.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-500 {
+  --_bg: #20c997;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-600 {
+  --_bg: rgb(25.6, 160.8, 120.8);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-700 {
+  --_bg: rgb(19.2, 120.6, 90.6);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-800 {
+  --_bg: rgb(12.8, 80.4, 60.4);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-teal-900 {
+  --_bg: rgb(6.4, 40.2, 30.2);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-100 {
+  --_bg: rgb(206.6, 244.4, 252);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-200 {
+  --_bg: rgb(158.2, 233.8, 249);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-300 {
+  --_bg: rgb(109.8, 223.2, 246);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-400 {
+  --_bg: rgb(61.4, 212.6, 243);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-500 {
+  --_bg: #0dcaf0;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-600 {
+  --_bg: rgb(10.4, 161.6, 192);
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-700 {
+  --_bg: rgb(7.8, 121.2, 144);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-800 {
+  --_bg: rgb(5.2, 80.8, 96);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-cyan-900 {
+  --_bg: rgb(2.6, 40.4, 48);
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-100 {
+  --_bg: #f8f9fa;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-200 {
+  --_bg: #e9ecef;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-300 {
+  --_bg: #dee2e6;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-400 {
+  --_bg: #ced4da;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-500 {
+  --_bg: #adb5bd;
+  --_fg: #000;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-600 {
+  --_bg: #6c757d;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-700 {
+  --_bg: #495057;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-800 {
+  --_bg: #343a40;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-bg-900 {
+  --_bg: #212529;
+  --_fg: #fff;
+  background-color: var(--_bg) !important;
+  color: var(--_fg) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+/* Optional: outline chip variant */
+.text-outline-blue-100 {
+  color: rgb(206.6, 226, 254.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(206.6, 226, 254.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-200 {
+  color: rgb(158.2, 197, 254.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(158.2, 197, 254.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-300 {
+  color: rgb(109.8, 168, 253.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(109.8, 168, 253.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-400 {
+  color: rgb(61.4, 139, 253.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(61.4, 139, 253.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-500 {
+  color: #0d6efd !important;
+  background-color: transparent !important;
+  border: 1px solid #0d6efd !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-600 {
+  color: rgb(10.4, 88, 202.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(10.4, 88, 202.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-700 {
+  color: rgb(7.8, 66, 151.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(7.8, 66, 151.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-800 {
+  color: rgb(5.2, 44, 101.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(5.2, 44, 101.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-blue-900 {
+  color: rgb(2.6, 22, 50.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(2.6, 22, 50.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-100 {
+  color: rgb(224.4, 207.2, 252.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(224.4, 207.2, 252.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-200 {
+  color: rgb(193.8, 159.4, 249.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(193.8, 159.4, 249.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-300 {
+  color: rgb(163.2, 111.6, 247.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(163.2, 111.6, 247.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-400 {
+  color: rgb(132.6, 63.8, 244.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(132.6, 63.8, 244.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-500 {
+  color: #6610f2 !important;
+  background-color: transparent !important;
+  border: 1px solid #6610f2 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-600 {
+  color: rgb(81.6, 12.8, 193.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(81.6, 12.8, 193.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-700 {
+  color: rgb(61.2, 9.6, 145.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(61.2, 9.6, 145.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-800 {
+  color: rgb(40.8, 6.4, 96.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(40.8, 6.4, 96.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-indigo-900 {
+  color: rgb(20.4, 3.2, 48.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(20.4, 3.2, 48.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-100 {
+  color: rgb(226.2, 217.2, 242.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(226.2, 217.2, 242.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-200 {
+  color: rgb(197.4, 179.4, 230.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(197.4, 179.4, 230.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-300 {
+  color: rgb(168.6, 141.6, 217.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(168.6, 141.6, 217.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-400 {
+  color: rgb(139.8, 103.8, 205.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(139.8, 103.8, 205.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-500 {
+  color: #6f42c1 !important;
+  background-color: transparent !important;
+  border: 1px solid #6f42c1 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-600 {
+  color: rgb(88.8, 52.8, 154.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(88.8, 52.8, 154.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-700 {
+  color: rgb(66.6, 39.6, 115.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(66.6, 39.6, 115.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-800 {
+  color: rgb(44.4, 26.4, 77.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(44.4, 26.4, 77.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-purple-900 {
+  color: rgb(22.2, 13.2, 38.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(22.2, 13.2, 38.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-100 {
+  color: rgb(246.8, 214.2, 230.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(246.8, 214.2, 230.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-200 {
+  color: rgb(238.6, 173.4, 205.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(238.6, 173.4, 205.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-300 {
+  color: rgb(230.4, 132.6, 181.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(230.4, 132.6, 181.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-400 {
+  color: rgb(222.2, 91.8, 156.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(222.2, 91.8, 156.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-500 {
+  color: #d63384 !important;
+  background-color: transparent !important;
+  border: 1px solid #d63384 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-600 {
+  color: rgb(171.2, 40.8, 105.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(171.2, 40.8, 105.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-700 {
+  color: rgb(128.4, 30.6, 79.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(128.4, 30.6, 79.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-800 {
+  color: rgb(85.6, 20.4, 52.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(85.6, 20.4, 52.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-pink-900 {
+  color: rgb(42.8, 10.2, 26.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(42.8, 10.2, 26.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-100 {
+  color: rgb(248, 214.6, 217.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(248, 214.6, 217.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-200 {
+  color: rgb(241, 174.2, 180.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(241, 174.2, 180.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-300 {
+  color: rgb(234, 133.8, 143.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(234, 133.8, 143.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-400 {
+  color: rgb(227, 93.4, 106.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(227, 93.4, 106.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-500 {
+  color: #dc3545 !important;
+  background-color: transparent !important;
+  border: 1px solid #dc3545 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-600 {
+  color: rgb(176, 42.4, 55.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(176, 42.4, 55.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-700 {
+  color: rgb(132, 31.8, 41.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(132, 31.8, 41.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-800 {
+  color: rgb(88, 21.2, 27.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(88, 21.2, 27.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-red-900 {
+  color: rgb(44, 10.6, 13.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(44, 10.6, 13.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-100 {
+  color: rgb(254.6, 229.2, 208) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(254.6, 229.2, 208) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-200 {
+  color: rgb(254.2, 203.4, 161) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(254.2, 203.4, 161) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-300 {
+  color: rgb(253.8, 177.6, 114) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(253.8, 177.6, 114) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-400 {
+  color: rgb(253.4, 151.8, 67) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(253.4, 151.8, 67) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-500 {
+  color: #fd7e14 !important;
+  background-color: transparent !important;
+  border: 1px solid #fd7e14 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-600 {
+  color: rgb(202.4, 100.8, 16) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(202.4, 100.8, 16) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-700 {
+  color: rgb(151.8, 75.6, 12) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(151.8, 75.6, 12) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-800 {
+  color: rgb(101.2, 50.4, 8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(101.2, 50.4, 8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-orange-900 {
+  color: rgb(50.6, 25.2, 4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(50.6, 25.2, 4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-100 {
+  color: rgb(255, 242.6, 205.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(255, 242.6, 205.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-200 {
+  color: rgb(255, 230.2, 155.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(255, 230.2, 155.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-300 {
+  color: rgb(255, 217.8, 106.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(255, 217.8, 106.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-400 {
+  color: rgb(255, 205.4, 56.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(255, 205.4, 56.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-500 {
+  color: #ffc107 !important;
+  background-color: transparent !important;
+  border: 1px solid #ffc107 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-600 {
+  color: rgb(204, 154.4, 5.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(204, 154.4, 5.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-700 {
+  color: rgb(153, 115.8, 4.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(153, 115.8, 4.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-800 {
+  color: rgb(102, 77.2, 2.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(102, 77.2, 2.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-yellow-900 {
+  color: rgb(51, 38.6, 1.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(51, 38.6, 1.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-100 {
+  color: rgb(209, 231, 220.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(209, 231, 220.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-200 {
+  color: rgb(163, 207, 186.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(163, 207, 186.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-300 {
+  color: rgb(117, 183, 152.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(117, 183, 152.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-400 {
+  color: rgb(71, 159, 118.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(71, 159, 118.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-500 {
+  color: #198754 !important;
+  background-color: transparent !important;
+  border: 1px solid #198754 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-600 {
+  color: rgb(20, 108, 67.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(20, 108, 67.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-700 {
+  color: rgb(15, 81, 50.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(15, 81, 50.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-800 {
+  color: rgb(10, 54, 33.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(10, 54, 33.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-green-900 {
+  color: rgb(5, 27, 16.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(5, 27, 16.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-100 {
+  color: rgb(210.4, 244.2, 234.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(210.4, 244.2, 234.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-200 {
+  color: rgb(165.8, 233.4, 213.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(165.8, 233.4, 213.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-300 {
+  color: rgb(121.2, 222.6, 192.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(121.2, 222.6, 192.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-400 {
+  color: rgb(76.6, 211.8, 171.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(76.6, 211.8, 171.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-500 {
+  color: #20c997 !important;
+  background-color: transparent !important;
+  border: 1px solid #20c997 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-600 {
+  color: rgb(25.6, 160.8, 120.8) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(25.6, 160.8, 120.8) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-700 {
+  color: rgb(19.2, 120.6, 90.6) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(19.2, 120.6, 90.6) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-800 {
+  color: rgb(12.8, 80.4, 60.4) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(12.8, 80.4, 60.4) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-teal-900 {
+  color: rgb(6.4, 40.2, 30.2) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(6.4, 40.2, 30.2) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-100 {
+  color: rgb(206.6, 244.4, 252) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(206.6, 244.4, 252) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-200 {
+  color: rgb(158.2, 233.8, 249) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(158.2, 233.8, 249) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-300 {
+  color: rgb(109.8, 223.2, 246) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(109.8, 223.2, 246) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-400 {
+  color: rgb(61.4, 212.6, 243) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(61.4, 212.6, 243) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-500 {
+  color: #0dcaf0 !important;
+  background-color: transparent !important;
+  border: 1px solid #0dcaf0 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-600 {
+  color: rgb(10.4, 161.6, 192) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(10.4, 161.6, 192) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-700 {
+  color: rgb(7.8, 121.2, 144) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(7.8, 121.2, 144) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-800 {
+  color: rgb(5.2, 80.8, 96) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(5.2, 80.8, 96) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-cyan-900 {
+  color: rgb(2.6, 40.4, 48) !important;
+  background-color: transparent !important;
+  border: 1px solid rgb(2.6, 40.4, 48) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-100 {
+  color: #f8f9fa !important;
+  background-color: transparent !important;
+  border: 1px solid #f8f9fa !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-200 {
+  color: #e9ecef !important;
+  background-color: transparent !important;
+  border: 1px solid #e9ecef !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-300 {
+  color: #dee2e6 !important;
+  background-color: transparent !important;
+  border: 1px solid #dee2e6 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-400 {
+  color: #ced4da !important;
+  background-color: transparent !important;
+  border: 1px solid #ced4da !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-500 {
+  color: #adb5bd !important;
+  background-color: transparent !important;
+  border: 1px solid #adb5bd !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-600 {
+  color: #6c757d !important;
+  background-color: transparent !important;
+  border: 1px solid #6c757d !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-700 {
+  color: #495057 !important;
+  background-color: transparent !important;
+  border: 1px solid #495057 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-800 {
+  color: #343a40 !important;
+  background-color: transparent !important;
+  border: 1px solid #343a40 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.text-outline-900 {
+  color: #212529 !important;
+  background-color: transparent !important;
+  border: 1px solid #212529 !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,463 @@
+/* src/scss/buttons.scss
+   Standalone button classes for all Bootstrap 5.3 colors with shadows
+   Usage: .btn-blue, .btn-indigo, .btn-purple, etc.
+*/
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+/* Color map using 500 shades (base colors) */
+$button-colors: (
+  "blue":   $blue-500,
+  "indigo": $indigo-500,
+  "purple": $purple-500,
+  "pink":   $pink-500,
+  "red":    $red-500,
+  "orange": $orange-500,
+  "yellow": $yellow-500,
+  "green":  $green-500,
+  "teal":   $teal-500,
+  "cyan":   $cyan-500,
+  "gray":   $gray-600
+);
+
+/* Generate button classes with shadows and hover states */
+@each $name, $color in $button-colors {
+  .btn-#{$name} {
+    color: color-contrast($color);
+    background-color: $color;
+    border-color: $color;
+    box-shadow: 0 4px 6px -1px rgba($color, 0.3), 
+                0 2px 4px -1px rgba($color, 0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: shade-color($color, 15%);
+      border-color: shade-color($color, 20%);
+      box-shadow: 0 10px 15px -3px rgba($color, 0.4), 
+                  0 4px 6px -2px rgba($color, 0.3);
+      transform: translateY(-2px);
+    }
+
+    &:active,
+    &.active {
+      color: color-contrast($color);
+      background-color: shade-color($color, 25%);
+      border-color: shade-color($color, 30%);
+      box-shadow: 0 2px 4px -1px rgba($color, 0.3),
+                  0 1px 2px -1px rgba($color, 0.2);
+      transform: translateY(0);
+    }
+
+    &:focus,
+    &.focus {
+      color: color-contrast($color);
+      background-color: shade-color($color, 15%);
+      border-color: shade-color($color, 20%);
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 4px 6px -1px rgba($color, 0.3), 
+                  0 2px 4px -1px rgba($color, 0.2);
+    }
+
+    &:disabled,
+    &.disabled {
+      color: color-contrast($color);
+      background-color: $color;
+      border-color: $color;
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+/* Outline button variants with shadows */
+@each $name, $color in $button-colors {
+  .btn-outline-#{$name} {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+    box-shadow: 0 2px 4px -1px rgba($color, 0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: $color;
+      border-color: $color;
+      box-shadow: 0 6px 10px -2px rgba($color, 0.3), 
+                  0 2px 4px -1px rgba($color, 0.2);
+      transform: translateY(-1px);
+    }
+
+    &:active,
+    &.active {
+      color: color-contrast($color);
+      background-color: shade-color($color, 10%);
+      border-color: shade-color($color, 10%);
+      box-shadow: 0 2px 4px -1px rgba($color, 0.2);
+      transform: translateY(0);
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 2px 4px -1px rgba($color, 0.2);
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $color;
+      background-color: transparent;
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+/* Soft/Light button variants - light background with colored text */
+@each $name, $color in $button-colors {
+  .btn-soft-#{$name} {
+    color: shade-color($color, 30%);
+    background-color: tint-color($color, 90%);
+    border-color: tint-color($color, 80%);
+    box-shadow: 0 1px 3px 0 rgba($color, 0.1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: shade-color($color, 40%);
+      background-color: tint-color($color, 80%);
+      border-color: tint-color($color, 70%);
+      box-shadow: 0 4px 6px -1px rgba($color, 0.2);
+      transform: translateY(-1px);
+    }
+
+    &:active,
+    &.active {
+      color: shade-color($color, 50%);
+      background-color: tint-color($color, 75%);
+      border-color: tint-color($color, 65%);
+      box-shadow: 0 1px 2px 0 rgba($color, 0.1);
+      transform: translateY(0);
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.3),
+                  0 1px 3px 0 rgba($color, 0.1);
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+/* Enhanced hover effect variants - scale + glow */
+@each $name, $color in $button-colors {
+  .btn-hover-#{$name} {
+    color: color-contrast($color);
+    background-color: $color;
+    border-color: $color;
+    box-shadow: 0 4px 6px -1px rgba($color, 0.3), 
+                0 2px 4px -1px rgba($color, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: shade-color($color, 10%);
+      border-color: shade-color($color, 15%);
+      box-shadow: 0 0 0 4px rgba($color, 0.15),
+                  0 20px 25px -5px rgba($color, 0.4),
+                  0 10px 10px -5px rgba($color, 0.3);
+      transform: scale(1.05) translateY(-3px);
+
+      &::before {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    &:active,
+    &.active {
+      color: color-contrast($color);
+      background-color: shade-color($color, 20%);
+      border-color: shade-color($color, 25%);
+      box-shadow: 0 0 0 2px rgba($color, 0.2),
+                  0 4px 6px -1px rgba($color, 0.3);
+      transform: scale(0.98) translateY(0);
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 4px 6px -1px rgba($color, 0.3);
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Glow effect variants - pulsing glow on hover */
+@each $name, $color in $button-colors {
+  .btn-glow-#{$name} {
+    color: color-contrast($color);
+    background-color: $color;
+    border-color: $color;
+    box-shadow: 0 4px 6px -1px rgba($color, 0.3);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: $color;
+      border-color: $color;
+      box-shadow: 0 0 20px rgba($color, 0.6),
+                  0 0 40px rgba($color, 0.4),
+                  0 0 60px rgba($color, 0.2),
+                  0 4px 6px -1px rgba($color, 0.3);
+      transform: translateY(-2px);
+      animation: pulse-glow-#{$name} 1.5s ease-in-out infinite;
+    }
+
+    &:active,
+    &.active {
+      background-color: shade-color($color, 15%);
+      border-color: shade-color($color, 20%);
+      box-shadow: 0 2px 4px -1px rgba($color, 0.3);
+      transform: translateY(0);
+      animation: none;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 0 20px rgba($color, 0.4);
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  // Generate keyframe animation for this specific color
+  @keyframes pulse-glow-#{$name} {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba($color, 0.6),
+                  0 0 40px rgba($color, 0.4),
+                  0 0 60px rgba($color, 0.2),
+                  0 4px 6px -1px rgba($color, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba($color, 0.8),
+                  0 0 50px rgba($color, 0.5),
+                  0 0 70px rgba($color, 0.3),
+                  0 6px 8px -1px rgba($color, 0.4);
+    }
+  }
+}
+
+/* Gradient shift effect - dramatic animated gradient */
+@each $name, $color in $button-colors {
+  .btn-gradient-#{$name} {
+    color: color-contrast($color);
+    background: linear-gradient(
+      45deg,
+      $color 0%,
+      tint-color($color, 20%) 25%,
+      shade-color($color, 15%) 50%,
+      tint-color($color, 10%) 75%,
+      $color 100%
+    );
+    border-color: $color;
+    box-shadow: 0 4px 6px -1px rgba($color, 0.3);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      transition: left 0.5s ease-in-out;
+    }
+
+    &:hover {
+      color: color-contrast($color);
+      background-position: 100% 100%;
+      border-color: shade-color($color, 10%);
+      box-shadow: 0 0 20px rgba($color, 0.4),
+                  0 10px 25px -5px rgba($color, 0.5),
+                  0 4px 6px -2px rgba($color, 0.3);
+      transform: translateY(-2px) scale(1.02);
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &:active,
+    &.active {
+      background-position: 50% 50%;
+      box-shadow: 0 2px 4px -1px rgba($color, 0.3);
+      transform: translateY(0) scale(1);
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 4px 6px -1px rgba($color, 0.3);
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 3D effect buttons - push down on hover */
+@each $name, $color in $button-colors {
+  .btn-3d-#{$name} {
+    color: color-contrast($color);
+    background-color: $color;
+    border: none;
+    box-shadow: 0 6px 0 shade-color($color, 30%),
+                0 8px 12px -2px rgba($color, 0.4);
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    top: 0;
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: tint-color($color, 5%);
+      box-shadow: 0 4px 0 shade-color($color, 30%),
+                  0 6px 8px -2px rgba($color, 0.4);
+      top: 2px;
+    }
+
+    &:active,
+    &.active {
+      color: color-contrast($color);
+      background-color: shade-color($color, 5%);
+      box-shadow: 0 1px 0 shade-color($color, 30%),
+                  0 2px 4px -1px rgba($color, 0.3);
+      top: 5px;
+    }
+
+    &:focus,
+    &.focus {
+      outline: 3px solid rgba($color, 0.4);
+      outline-offset: 2px;
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: 0 6px 0 shade-color($color, 30%);
+      top: 0;
+    }
+  }
+}
+
+/* Bounce effect - bouncy animation on hover */
+@each $name, $color in $button-colors {
+  .btn-bounce-#{$name} {
+    color: color-contrast($color);
+    background-color: $color;
+    border-color: $color;
+    box-shadow: 0 4px 6px -1px rgba($color, 0.3);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:hover {
+      color: color-contrast($color);
+      background-color: shade-color($color, 10%);
+      border-color: shade-color($color, 15%);
+      box-shadow: 0 12px 20px -5px rgba($color, 0.5),
+                  0 6px 8px -2px rgba($color, 0.3);
+      transform: scale(1.1) translateY(-4px);
+      animation: bounce-effect 0.6s ease-in-out;
+    }
+
+    &:active,
+    &.active {
+      background-color: shade-color($color, 20%);
+      box-shadow: 0 2px 4px -1px rgba($color, 0.3);
+      transform: scale(0.95);
+      animation: none;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0 0 0.25rem rgba($color, 0.5),
+                  0 4px 6px -1px rgba($color, 0.3);
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.65;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+/* Keyframe animations */
+
+@keyframes bounce-effect {
+  0%, 100% {
+    transform: scale(1.1) translateY(-4px);
+  }
+  50% {
+    transform: scale(1.15) translateY(-8px);
+  }
+}
+

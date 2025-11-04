@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Standalone Button Classes Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/buttons.css" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem 0;
+    }
+    .demo-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .demo-section h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #1a202c;
+    }
+    .demo-section .subtitle {
+      color: #718096;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .demo-section h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-showcase {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 2rem;
+    }
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+    }
+    .code-block {
+      background: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 1rem;
+      margin: 1rem 0;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.875rem;
+      color: #2d3748;
+      overflow-x: auto;
+    }
+    .feature-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: #edf2f7;
+      color: #4a5568;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+    .color-name {
+      font-size: 0.75rem;
+      color: #718096;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    .btn-example {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>✨ Standalone Button Classes</h1>
+      <p>Simple, elegant buttons with built-in shadows and hover effects</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Introduction Section -->
+    <div class="demo-section">
+      <h2>📦 Ready-to-Use Button Classes</h2>
+      <p class="subtitle">Just add the class name - no additional utilities needed!</p>
+      
+      <div class="mb-4">
+        <span class="feature-badge">✓ Auto-contrast text</span>
+        <span class="feature-badge">✓ Built-in shadows</span>
+        <span class="feature-badge">✓ Hover animations</span>
+        <span class="feature-badge">✓ Focus states</span>
+        <span class="feature-badge">✓ Disabled support</span>
+      </div>
+
+      <h3>🚀 Quick Example</h3>
+      <div class="code-block">
+&lt;button class="btn btn-blue"&gt;Click Me&lt;/button&gt;<br>
+&lt;button class="btn btn-outline-green"&gt;Outlined&lt;/button&gt;<br>
+&lt;button class="btn btn-soft-purple"&gt;Soft Style&lt;/button&gt;
+      </div>
+
+      <div class="btn-showcase">
+        <button class="btn btn-blue">Click Me</button>
+        <button class="btn btn-outline-green">Outlined</button>
+        <button class="btn btn-soft-purple">Soft Style</button>
+      </div>
+    </div>
+
+    <!-- Solid Buttons Section -->
+    <div class="demo-section">
+      <h2>🎨 Solid Button Styles</h2>
+      <p class="subtitle">Primary button style with bold colors and shadows</p>
+
+      <h3>All Colors</h3>
+      <div class="btn-grid">
+        <div class="btn-example">
+          <button class="btn btn-blue w-100">Button</button>
+          <div class="color-name">.btn-blue</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-indigo w-100">Button</button>
+          <div class="color-name">.btn-indigo</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-purple w-100">Button</button>
+          <div class="color-name">.btn-purple</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-pink w-100">Button</button>
+          <div class="color-name">.btn-pink</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-red w-100">Button</button>
+          <div class="color-name">.btn-red</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-orange w-100">Button</button>
+          <div class="color-name">.btn-orange</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-yellow w-100">Button</button>
+          <div class="color-name">.btn-yellow</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-green w-100">Button</button>
+          <div class="color-name">.btn-green</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-teal w-100">Button</button>
+          <div class="color-name">.btn-teal</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-cyan w-100">Button</button>
+          <div class="color-name">.btn-cyan</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-gray w-100">Button</button>
+          <div class="color-name">.btn-gray</div>
+        </div>
+      </div>
+
+      <h3>💡 With Icons</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-blue">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+          </svg>
+          Save Changes
+        </button>
+        <button class="btn btn-green">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          Confirm
+        </button>
+        <button class="btn btn-red">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+          </svg>
+          Delete
+        </button>
+      </div>
+
+      <h3>📏 Size Variants</h3>
+      <div class="btn-showcase align-items-center">
+        <button class="btn btn-lg btn-purple">Large Button</button>
+        <button class="btn btn-purple">Default Button</button>
+        <button class="btn btn-sm btn-purple">Small Button</button>
+      </div>
+    </div>
+
+    <!-- Outline Buttons Section -->
+    <div class="demo-section">
+      <h2>⭕ Outline Button Styles</h2>
+      <p class="subtitle">Transparent background with colored borders</p>
+
+      <h3>All Colors</h3>
+      <div class="btn-grid">
+        <div class="btn-example">
+          <button class="btn btn-outline-blue w-100">Button</button>
+          <div class="color-name">.btn-outline-blue</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-indigo w-100">Button</button>
+          <div class="color-name">.btn-outline-indigo</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-purple w-100">Button</button>
+          <div class="color-name">.btn-outline-purple</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-pink w-100">Button</button>
+          <div class="color-name">.btn-outline-pink</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-red w-100">Button</button>
+          <div class="color-name">.btn-outline-red</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-orange w-100">Button</button>
+          <div class="color-name">.btn-outline-orange</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-yellow w-100">Button</button>
+          <div class="color-name">.btn-outline-yellow</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-green w-100">Button</button>
+          <div class="color-name">.btn-outline-green</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-teal w-100">Button</button>
+          <div class="color-name">.btn-outline-teal</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-cyan w-100">Button</button>
+          <div class="color-name">.btn-outline-cyan</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-outline-gray w-100">Button</button>
+          <div class="color-name">.btn-outline-gray</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Buttons Section -->
+    <div class="demo-section">
+      <h2>🌸 Soft Button Styles</h2>
+      <p class="subtitle">Light background with colored text - perfect for subtle actions</p>
+
+      <h3>All Colors</h3>
+      <div class="btn-grid">
+        <div class="btn-example">
+          <button class="btn btn-soft-blue w-100">Button</button>
+          <div class="color-name">.btn-soft-blue</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-indigo w-100">Button</button>
+          <div class="color-name">.btn-soft-indigo</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-purple w-100">Button</button>
+          <div class="color-name">.btn-soft-purple</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-pink w-100">Button</button>
+          <div class="color-name">.btn-soft-pink</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-red w-100">Button</button>
+          <div class="color-name">.btn-soft-red</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-orange w-100">Button</button>
+          <div class="color-name">.btn-soft-orange</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-yellow w-100">Button</button>
+          <div class="color-name">.btn-soft-yellow</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-green w-100">Button</button>
+          <div class="color-name">.btn-soft-green</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-teal w-100">Button</button>
+          <div class="color-name">.btn-soft-teal</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-cyan w-100">Button</button>
+          <div class="color-name">.btn-soft-cyan</div>
+        </div>
+        <div class="btn-example">
+          <button class="btn btn-soft-gray w-100">Button</button>
+          <div class="color-name">.btn-soft-gray</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practical Examples Section -->
+    <div class="demo-section">
+      <h2>🎯 Practical UI Examples</h2>
+      <p class="subtitle">Real-world usage scenarios</p>
+
+      <h3>Form Actions</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-blue">Submit Form</button>
+        <button class="btn btn-outline-gray">Cancel</button>
+      </div>
+
+      <h3>CRUD Operations</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-green">Create New</button>
+        <button class="btn btn-blue">Update</button>
+        <button class="btn btn-red">Delete</button>
+        <button class="btn btn-soft-gray">View Details</button>
+      </div>
+
+      <h3>Status Actions</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-soft-green">✓ Approved</button>
+        <button class="btn btn-soft-yellow">⏳ Pending Review</button>
+        <button class="btn btn-soft-red">✕ Rejected</button>
+        <button class="btn btn-soft-blue">📝 Draft</button>
+      </div>
+
+      <h3>Social Actions</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-blue">👍 Like</button>
+        <button class="btn btn-red">❤️ Love</button>
+        <button class="btn btn-purple">🔗 Share</button>
+        <button class="btn btn-cyan">💬 Comment</button>
+        <button class="btn btn-orange">⭐ Star</button>
+      </div>
+
+      <h3>E-commerce</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-lg btn-green">🛒 Add to Cart</button>
+        <button class="btn btn-lg btn-blue">💳 Buy Now</button>
+        <button class="btn btn-lg btn-outline-gray">🤍 Wishlist</button>
+      </div>
+    </div>
+
+    <!-- States Section -->
+    <div class="demo-section">
+      <h2>🎭 Button States</h2>
+      <p class="subtitle">All buttons support hover, active, focus, and disabled states</p>
+
+      <h3>Interactive States (Hover to test)</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-blue">Hover Me</button>
+        <button class="btn btn-green">Click Me</button>
+        <button class="btn btn-purple">Focus Me</button>
+      </div>
+
+      <h3>Disabled State</h3>
+      <div class="btn-showcase">
+        <button class="btn btn-blue" disabled>Solid Disabled</button>
+        <button class="btn btn-outline-green" disabled>Outline Disabled</button>
+        <button class="btn btn-soft-purple" disabled>Soft Disabled</button>
+      </div>
+    </div>
+
+    <!-- Documentation Section -->
+    <div class="demo-section">
+      <h2>📚 Usage Guide</h2>
+      
+      <h3>1. Include the CSS</h3>
+      <div class="code-block">
+&lt;link rel="stylesheet" href="./css/bootstrap.css" /&gt;<br>
+&lt;link rel="stylesheet" href="./css/buttons.css" /&gt;
+      </div>
+
+      <h3>2. Use the Classes</h3>
+      <div class="code-block">
+&lt;!-- Solid buttons --&gt;<br>
+&lt;button class="btn btn-blue"&gt;Blue Button&lt;/button&gt;<br>
+&lt;button class="btn btn-green"&gt;Green Button&lt;/button&gt;<br>
+<br>
+&lt;!-- Outline buttons --&gt;<br>
+&lt;button class="btn btn-outline-purple"&gt;Purple Outline&lt;/button&gt;<br>
+<br>
+&lt;!-- Soft buttons --&gt;<br>
+&lt;button class="btn btn-soft-pink"&gt;Pink Soft&lt;/button&gt;<br>
+<br>
+&lt;!-- Combine with Bootstrap sizing --&gt;<br>
+&lt;button class="btn btn-lg btn-indigo"&gt;Large Indigo&lt;/button&gt;<br>
+&lt;button class="btn btn-sm btn-red"&gt;Small Red&lt;/button&gt;
+      </div>
+
+      <h3>3. Available Colors</h3>
+      <div class="code-block">
+blue, indigo, purple, pink, red, orange,<br>
+yellow, green, teal, cyan, gray
+      </div>
+
+      <h3>4. Available Styles</h3>
+      <ul style="color: #4a5568;">
+        <li><code>.btn-{color}</code> - Solid style with shadow</li>
+        <li><code>.btn-outline-{color}</code> - Outline style</li>
+        <li><code>.btn-soft-{color}</code> - Light background style</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center py-4" style="color: white;">
+      <p class="mb-1">
+        <strong>33 button variants</strong> (11 colors × 3 styles)
+      </p>
+      <p class="mb-0" style="opacity: 0.9;">
+        Built with Bootstrap 5.3 • Auto-contrast • Shadows included • Fully responsive
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

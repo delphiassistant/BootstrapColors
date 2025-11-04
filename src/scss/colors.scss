@@ -1,0 +1,65 @@
+/* src/scss/colors.scss
+   Per-shade utilities for Bootstrap 5.3 "All colors" (blue/indigo/purple/pink/red/orange/yellow/green/teal/cyan/gray).
+   Outputs:
+     .text-<hue>-<shade>, .bg-<hue>-<shade>, .border-<hue>-<shade>, .text-bg-<hue>-<shade>
+   These are additive; they do not override Bootstrap's own utilities.
+*/
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+/* Collect all hue maps exactly as in Bootstrap's docs */
+$all-palettes: (
+  "blue":   $blues,
+  "indigo": $indigos,
+  "purple": $purples,
+  "pink":   $pinks,
+  "red":    $reds,
+  "orange": $oranges,
+  "yellow": $yellows,
+  "green":  $greens,
+  "teal":   $teals,
+  "cyan":   $cyans,
+  "gray":   $grays
+);
+
+/* Core utilities */
+@each $name, $palette in $all-palettes {
+  @each $shade, $value in $palette {
+    .text-#{$shade}   { color: #{$value} !important; }
+    .bg-#{$shade}     { background-color: #{$value} !important; }
+    .border-#{$shade} { border-color: #{$value} !important; }
+  }
+}
+
+/* Accent chip with automatic readable text using Bootstrap's color-contrast() */
+@each $name, $palette in $all-palettes {
+  @each $shade, $value in $palette {
+    .text-bg-#{$shade} {
+      --_bg: #{$value};
+      --_fg: #{color-contrast($value)};
+      background-color: var(--_bg) !important;
+      color: var(--_fg) !important;
+      padding: .25rem .5rem;
+      border-radius: .25rem;
+      display: inline-block;
+    }
+  }
+}
+
+/* Optional: outline chip variant */
+@each $name, $palette in $all-palettes {
+  @each $shade, $value in $palette {
+    .text-outline-#{$shade} {
+      color: #{$value} !important;
+      background-color: transparent !important;
+      border: 1px solid #{$value} !important;
+      padding: .25rem .5rem;
+      border-radius: .25rem;
+      display: inline-block;
+    }
+  }
+}
+

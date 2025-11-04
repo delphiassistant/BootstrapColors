@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build:bs": "sass --load-path=node_modules src/scss/bootstrap.scss public/css/bootstrap.css",
+    "build:colors": "sass --load-path=node_modules src/scss/colors.scss public/css/colors.css",
+    "build:buttons": "sass --load-path=node_modules src/scss/buttons.scss public/css/buttons.css",
+    "build:css": "npm run build:colors && npm run build:buttons",
+    "watch:css": "sass --load-path=node_modules --watch src/scss:public/css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.80.7"
+  }
+}
