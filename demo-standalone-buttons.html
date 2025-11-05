@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <title>Standalone Button Classes Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/bootstrap.css" />
-  <link rel="stylesheet" href="./css/buttons.css" />
+  <link rel="stylesheet" href="public/css/bootstrap.css" />
+  <link rel="stylesheet" href="public/css/buttons.css" />
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -191,30 +191,6 @@
         </div>
       </div>
 
-      <h3>💡 With Icons</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-blue">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-          </svg>
-          Save Changes
-        </button>
-        <button class="btn btn-green">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-          </svg>
-          Confirm
-        </button>
-        <button class="btn btn-red">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display:inline-block;vertical-align:middle;margin-right:0.5rem">
-            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-          </svg>
-          Delete
-        </button>
-      </div>
-
       <h3>📏 Size Variants</h3>
       <div class="btn-showcase align-items-center">
         <button class="btn btn-lg btn-purple">Large Button</button>
@@ -329,111 +305,6 @@
           <div class="color-name">.btn-soft-gray</div>
         </div>
       </div>
-    </div>
-
-    <!-- Practical Examples Section -->
-    <div class="demo-section">
-      <h2>🎯 Practical UI Examples</h2>
-      <p class="subtitle">Real-world usage scenarios</p>
-
-      <h3>Form Actions</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-blue">Submit Form</button>
-        <button class="btn btn-outline-gray">Cancel</button>
-      </div>
-
-      <h3>CRUD Operations</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-green">Create New</button>
-        <button class="btn btn-blue">Update</button>
-        <button class="btn btn-red">Delete</button>
-        <button class="btn btn-soft-gray">View Details</button>
-      </div>
-
-      <h3>Status Actions</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-soft-green">✓ Approved</button>
-        <button class="btn btn-soft-yellow">⏳ Pending Review</button>
-        <button class="btn btn-soft-red">✕ Rejected</button>
-        <button class="btn btn-soft-blue">📝 Draft</button>
-      </div>
-
-      <h3>Social Actions</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-blue">👍 Like</button>
-        <button class="btn btn-red">❤️ Love</button>
-        <button class="btn btn-purple">🔗 Share</button>
-        <button class="btn btn-cyan">💬 Comment</button>
-        <button class="btn btn-orange">⭐ Star</button>
-      </div>
-
-      <h3>E-commerce</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-lg btn-green">🛒 Add to Cart</button>
-        <button class="btn btn-lg btn-blue">💳 Buy Now</button>
-        <button class="btn btn-lg btn-outline-gray">🤍 Wishlist</button>
-      </div>
-    </div>
-
-    <!-- States Section -->
-    <div class="demo-section">
-      <h2>🎭 Button States</h2>
-      <p class="subtitle">All buttons support hover, active, focus, and disabled states</p>
-
-      <h3>Interactive States (Hover to test)</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-blue">Hover Me</button>
-        <button class="btn btn-green">Click Me</button>
-        <button class="btn btn-purple">Focus Me</button>
-      </div>
-
-      <h3>Disabled State</h3>
-      <div class="btn-showcase">
-        <button class="btn btn-blue" disabled>Solid Disabled</button>
-        <button class="btn btn-outline-green" disabled>Outline Disabled</button>
-        <button class="btn btn-soft-purple" disabled>Soft Disabled</button>
-      </div>
-    </div>
-
-    <!-- Documentation Section -->
-    <div class="demo-section">
-      <h2>📚 Usage Guide</h2>
-      
-      <h3>1. Include the CSS</h3>
-      <div class="code-block">
-&lt;link rel="stylesheet" href="./css/bootstrap.css" /&gt;<br>
-&lt;link rel="stylesheet" href="./css/buttons.css" /&gt;
-      </div>
-
-      <h3>2. Use the Classes</h3>
-      <div class="code-block">
-&lt;!-- Solid buttons --&gt;<br>
-&lt;button class="btn btn-blue"&gt;Blue Button&lt;/button&gt;<br>
-&lt;button class="btn btn-green"&gt;Green Button&lt;/button&gt;<br>
-<br>
-&lt;!-- Outline buttons --&gt;<br>
-&lt;button class="btn btn-outline-purple"&gt;Purple Outline&lt;/button&gt;<br>
-<br>
-&lt;!-- Soft buttons --&gt;<br>
-&lt;button class="btn btn-soft-pink"&gt;Pink Soft&lt;/button&gt;<br>
-<br>
-&lt;!-- Combine with Bootstrap sizing --&gt;<br>
-&lt;button class="btn btn-lg btn-indigo"&gt;Large Indigo&lt;/button&gt;<br>
-&lt;button class="btn btn-sm btn-red"&gt;Small Red&lt;/button&gt;
-      </div>
-
-      <h3>3. Available Colors</h3>
-      <div class="code-block">
-blue, indigo, purple, pink, red, orange,<br>
-yellow, green, teal, cyan, gray
-      </div>
-
-      <h3>4. Available Styles</h3>
-      <ul style="color: #4a5568;">
-        <li><code>.btn-{color}</code> - Solid style with shadow</li>
-        <li><code>.btn-outline-{color}</code> - Outline style</li>
-        <li><code>.btn-soft-{color}</code> - Light background style</li>
-      </ul>
     </div>
 
     <!-- Footer -->

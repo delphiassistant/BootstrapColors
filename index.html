@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bootstrap Colors - Custom Color Utilities & Button Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="public/css/bootstrap.css" />
+  <link rel="stylesheet" href="public/css/colors.css" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 3rem 0;
+    }
+    .hero {
+      text-align: center;
+      color: white;
+      margin-bottom: 3rem;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      letter-spacing: -0.025em;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      opacity: 0.95;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .hero .subtitle {
+      font-size: 1.125rem;
+      opacity: 0.85;
+    }
+    .container {
+      max-width: 1200px;
+    }
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 3rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      color: #1a202c;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .section h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2rem 0 1rem;
+      color: #2d3748;
+    }
+    .section p {
+      font-size: 1.125rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+    .stat-card .number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #667eea;
+      margin-bottom: 0.5rem;
+    }
+    .stat-card .label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2d3748;
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .demo-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 12px;
+      padding: 2rem;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .demo-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+    .demo-card .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .demo-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: white;
+    }
+    .demo-card p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .demo-card .arrow {
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+    .demo-card:hover .arrow {
+      transform: translateX(5px);
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+    .features li {
+      padding: 0.75rem 0;
+      padding-left: 2rem;
+      position: relative;
+      color: #4a5568;
+      font-size: 1.125rem;
+    }
+    .features li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #48bb78;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+    .quick-links {
+      background: #f7fafc;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .quick-links h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+    .quick-links ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0.75rem;
+    }
+    .quick-links li a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .quick-links li a:hover {
+      color: #764ba2;
+    }
+    .footer {
+      text-align: center;
+      color: white;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+    .footer p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    code {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #d63384;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <h1>🎨 Bootstrap Colors</h1>
+      <p>Custom Color Utilities & Button Library</p>
+      <p class="subtitle">Built on Bootstrap 5.3 • Production Ready • 583 CSS Classes</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Overview Section -->
+    <div class="section">
+      <h2>📦 Project Overview</h2>
+      <p>
+        A comprehensive collection of color utilities and button classes built on Bootstrap 5.3, 
+        featuring per-shade color control, stunning hover effects, and production-ready components. 
+        All utilities are additive and don't override Bootstrap's default styles.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="number">583</div>
+          <div class="label">Total CSS Classes</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">495</div>
+          <div class="label">Color Utilities</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">88</div>
+          <div class="label">Button Variants</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">99</div>
+          <div class="label">Color Shades</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Demos Section -->
+    <div class="section">
+      <h2>🎬 Interactive Demos</h2>
+      <p>Explore the complete library with these interactive demonstrations:</p>
+
+      <div class="demo-grid">
+        <a href="demo-colors.html" class="demo-card">
+          <div class="icon">🎨</div>
+          <h3>Color Utilities</h3>
+          <p>
+            Explore all 495 color utility classes with visual swatches. 
+            Includes text, background, border, and chip variants for all 99 shades.
+          </p>
+          <span class="arrow">View Demo →</span>
+        </a>
+
+        <a href="demo-standalone-buttons.html" class="demo-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+          <div class="icon">🔘</div>
+          <h3>Standalone Buttons</h3>
+          <p>
+            Ready-to-use button classes with built-in shadows and hover effects. 
+            Solid, outline, and soft styles across all 11 colors.
+          </p>
+          <span class="arrow">View Demo →</span>
+        </a>
+
+        <a href="demo-hover-effects.html" class="demo-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+          <div class="icon">✨</div>
+          <h3>Hover Effects</h3>
+          <p>
+            Five stunning hover animations including glow, gradient, 3D, and bounce effects. 
+            Perfect for creating eye-catching CTAs.
+          </p>
+          <span class="arrow">View Demo →</span>
+        </a>
+
+        <a href="demo-buttons.html" class="demo-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+          <div class="icon">🎯</div>
+          <h3>Utility-Based Buttons</h3>
+          <p>
+            Learn how to construct custom buttons using color utilities. 
+            Comprehensive examples with all color combinations.
+          </p>
+          <span class="arrow">View Demo →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section">
+      <h2>✨ Key Features</h2>
+      
+      <h3>🎨 Color Utilities (colors.css)</h3>
+      <ul class="features">
+        <li>99 text color utilities (<code>.text-{color}-{shade}</code>)</li>
+        <li>99 background utilities (<code>.bg-{color}-{shade}</code>)</li>
+        <li>99 border color utilities (<code>.border-{color}-{shade}</code>)</li>
+        <li>99 auto-contrast chip utilities (<code>.text-bg-{color}-{shade}</code>)</li>
+        <li>99 outline chip utilities (<code>.text-outline-{color}-{shade}</code>)</li>
+        <li>11 color families with 9 shades each (100-900)</li>
+      </ul>
+
+      <h3>🔘 Button Classes (buttons.css)</h3>
+      <ul class="features">
+        <li>11 solid buttons with shadows (<code>.btn-{color}</code>)</li>
+        <li>11 outline buttons (<code>.btn-outline-{color}</code>)</li>
+        <li>11 soft buttons (<code>.btn-soft-{color}</code>)</li>
+        <li>11 enhanced hover effects (<code>.btn-hover-{color}</code>)</li>
+        <li>11 glowing buttons (<code>.btn-glow-{color}</code>)</li>
+        <li>11 gradient buttons (<code>.btn-gradient-{color}</code>)</li>
+        <li>11 3D effect buttons (<code>.btn-3d-{color}</code>)</li>
+        <li>11 bouncing buttons (<code>.btn-bounce-{color}</code>)</li>
+      </ul>
+
+      <h3>🚀 General Features</h3>
+      <ul class="features">
+        <li>Built on Bootstrap 5.3 official color maps</li>
+        <li>Pure CSS - no JavaScript required</li>
+        <li>Hardware-accelerated animations</li>
+        <li>Fully accessible (WCAG compliant)</li>
+        <li>Auto-contrast text colors</li>
+        <li>Hover, focus, active, and disabled states</li>
+        <li>Compatible with all Bootstrap sizing utilities</li>
+        <li>Production-ready and cross-browser compatible</li>
+      </ul>
+    </div>
+
+    <!-- Quick Start Section -->
+    <div class="section">
+      <h2>🚀 Quick Start</h2>
+      <p>Get started in three simple steps:</p>
+
+      <h3>1. Build the CSS</h3>
+      <pre style="background: #2d3748; color: #e2e8f0; padding: 1rem; border-radius: 8px; overflow-x: auto;"><code>npm install
+npm run build:css</code></pre>
+
+      <h3>2. Include in Your HTML</h3>
+      <pre style="background: #2d3748; color: #e2e8f0; padding: 1rem; border-radius: 8px; overflow-x: auto;"><code>&lt;link rel="stylesheet" href="public/css/bootstrap.css" /&gt;
+&lt;link rel="stylesheet" href="public/css/colors.css" /&gt;
+&lt;link rel="stylesheet" href="public/css/buttons.css" /&gt;</code></pre>
+
+      <h3>3. Use the Classes</h3>
+      <pre style="background: #2d3748; color: #e2e8f0; padding: 1rem; border-radius: 8px; overflow-x: auto;"><code>&lt;!-- Color utilities --&gt;
+&lt;p class="text-blue-600"&gt;Blue text&lt;/p&gt;
+&lt;div class="bg-indigo-200"&gt;Light indigo background&lt;/div&gt;
+
+&lt;!-- Button classes --&gt;
+&lt;button class="btn btn-blue"&gt;Solid Button&lt;/button&gt;
+&lt;button class="btn btn-hover-purple"&gt;Hover Effect&lt;/button&gt;
+&lt;button class="btn btn-glow-red"&gt;Glowing Button&lt;/button&gt;</code></pre>
+    </div>
+
+    <!-- Documentation Links -->
+    <div class="section">
+      <h2>📚 Documentation</h2>
+      <p>Comprehensive guides and references for all features:</p>
+
+      <div class="quick-links">
+        <h4>📖 Complete Guides</h4>
+        <ul>
+          <li><a href="COLORS-GUIDE.md">📄 Colors Guide</a> - Complete guide to color utilities</li>
+          <li><a href="BUTTON-CLASSES.md">📄 Button Classes Guide</a> - Complete button class reference</li>
+          <li><a href="HOVER-EFFECTS-GUIDE.md">📄 Hover Effects Guide</a> - Guide to hover animations</li>
+          <li><a href="README.md">📄 README</a> - Project overview and quick reference</li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <h4>🎨 Available Colors</h4>
+        <ul style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+          <li><span style="color: #0d6efd;">●</span> blue</li>
+          <li><span style="color: #6610f2;">●</span> indigo</li>
+          <li><span style="color: #6f42c1;">●</span> purple</li>
+          <li><span style="color: #d63384;">●</span> pink</li>
+          <li><span style="color: #dc3545;">●</span> red</li>
+          <li><span style="color: #fd7e14;">●</span> orange</li>
+          <li><span style="color: #ffc107;">●</span> yellow</li>
+          <li><span style="color: #198754;">●</span> green</li>
+          <li><span style="color: #20c997;">●</span> teal</li>
+          <li><span style="color: #0dcaf0;">●</span> cyan</li>
+          <li><span style="color: #6c757d;">●</span> gray</li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <h4>🔢 Shade Range</h4>
+        <p style="margin: 1rem 0; color: #4a5568;">
+          <code>100</code> (lightest) → 
+          <code>200</code> → 
+          <code>300</code> → 
+          <code>400</code> → 
+          <code>500</code> (base) → 
+          <code>600</code> → 
+          <code>700</code> → 
+          <code>800</code> → 
+          <code>900</code> (darkest)
+        </p>
+      </div>
+    </div>
+
+    <!-- Use Cases Section -->
+    <div class="section">
+      <h2>🎯 Use Cases</h2>
+      <p>Perfect for a wide variety of projects:</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">🛒 E-commerce</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">Product cards, CTAs, badges, status indicators</p>
+        </div>
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">📊 Dashboards</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">Metrics, charts, status cards, data visualization</p>
+        </div>
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">📝 Forms</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">Input validation, submit buttons, field states</p>
+        </div>
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">📱 Apps</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">UI components, notifications, action buttons</p>
+        </div>
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">🎮 Games</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">Buttons, score displays, achievement badges</p>
+        </div>
+        <div style="padding: 1.5rem; background: #f7fafc; border-radius: 8px;">
+          <h4 style="font-size: 1.125rem; font-weight: 700; color: #2d3748; margin-bottom: 0.75rem;">📰 Content Sites</h4>
+          <p style="font-size: 0.875rem; color: #4a5568; margin: 0;">Tags, categories, author cards, CTAs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <p><strong>Built with Bootstrap 5.3 • Production Ready • MIT License</strong></p>
+      <p>583 CSS Classes • 11 Colors • 9 Shades • 8 Button Styles</p>
+      <p style="opacity: 0.85;">Created with ❤️ for modern web development</p>
+    </div>
+  </div>
+</body>
+</html>
+
