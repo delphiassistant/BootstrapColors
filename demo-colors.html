@@ -60,6 +60,7 @@
       overflow: hidden;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
     }
     .shade-card:hover {
       transform: translateY(-2px);
@@ -103,6 +104,10 @@
     .chip-demo {
       display: inline-block;
       margin: 0.25rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
     }
     .nav-tabs {
       border-bottom: 2px solid #dee2e6;
@@ -158,17 +163,20 @@
 <body>
   <div class="container">
     <h1 class="page-title">🎨 Bootstrap Color Utilities</h1>
-    <p class="page-subtitle">Complete showcase of all per-shade color utilities from colors.css</p>
+    <p class="page-subtitle">Complete showcase of all 495 color utility classes with visual examples</p>
 
     <div class="legend">
       <h4>📚 Available Utilities:</h4>
       <ul>
-        <li><code>.text-{color}-{shade}</code> - Text color utilities</li>
-        <li><code>.bg-{color}-{shade}</code> - Background color utilities</li>
-        <li><code>.border-{color}-{shade}</code> - Border color utilities</li>
-        <li><code>.text-bg-{color}-{shade}</code> - Combined background + auto-contrast text (chip style)</li>
-        <li><code>.text-outline-{color}-{shade}</code> - Outline chip variant</li>
+        <li><code>.text-{color}-{shade}</code> - Text color utilities (99 classes)</li>
+        <li><code>.bg-{color}-{shade}</code> - Background color utilities (99 classes)</li>
+        <li><code>.border-{color}-{shade}</code> - Border color utilities (99 classes)</li>
+        <li><code>.text-bg-{color}-{shade}</code> - Combined background + auto-contrast text (99 classes)</li>
+        <li><code>.text-outline-{color}-{shade}</code> - Outline chip variant (99 classes)</li>
       </ul>
+      <p style="margin-top: 1rem; margin-bottom: 0; color: #6c757d; font-size: 0.875rem;">
+        <strong>Total: 495 utility classes</strong> • 11 colors × 9 shades × 5 utility types
+      </p>
     </div>
 
     <!-- Navigation Tabs -->
@@ -193,68 +201,69 @@
     <!-- Tab: All Shades -->
     <div id="tab-all" class="tab-content active">
       <h2 class="section-title">All Color Shades</h2>
+      <p style="color: #6c757d; margin-bottom: 2rem;">Click any color card to copy its class name to clipboard</p>
       
       <!-- Blue -->
       <div class="color-group">
         <div class="color-name">🔵 Blue</div>
         <div class="shade-grid">
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-100')">
             <div class="shade-color bg-blue-100"></div>
             <div class="shade-info">
               <div class="shade-label">Blue 100</div>
               <div class="shade-class">.bg-blue-100</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-200')">
             <div class="shade-color bg-blue-200"></div>
             <div class="shade-info">
               <div class="shade-label">Blue 200</div>
               <div class="shade-class">.bg-blue-200</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-300')">
             <div class="shade-color bg-blue-300"></div>
             <div class="shade-info">
               <div class="shade-label">Blue 300</div>
               <div class="shade-class">.bg-blue-300</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-400')">
             <div class="shade-color bg-blue-400"></div>
             <div class="shade-info">
               <div class="shade-label">Blue 400</div>
               <div class="shade-class">.bg-blue-400</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-500')">
             <div class="shade-color bg-blue-500 text-white">500</div>
             <div class="shade-info">
               <div class="shade-label">Blue 500</div>
               <div class="shade-class">.bg-blue-500</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-600')">
             <div class="shade-color bg-blue-600 text-white">600</div>
             <div class="shade-info">
               <div class="shade-label">Blue 600</div>
               <div class="shade-class">.bg-blue-600</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-700')">
             <div class="shade-color bg-blue-700 text-white">700</div>
             <div class="shade-info">
               <div class="shade-label">Blue 700</div>
               <div class="shade-class">.bg-blue-700</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-800')">
             <div class="shade-color bg-blue-800 text-white">800</div>
             <div class="shade-info">
               <div class="shade-label">Blue 800</div>
               <div class="shade-class">.bg-blue-800</div>
             </div>
           </div>
-          <div class="shade-card">
+          <div class="shade-card" onclick="copyToClipboard('.bg-blue-900')">
             <div class="shade-color bg-blue-900 text-white">900</div>
             <div class="shade-info">
               <div class="shade-label">Blue 900</div>
@@ -264,22 +273,962 @@
         </div>
       </div>
 
-      <!-- Additional color groups truncated for brevity - they follow the same pattern -->
-      <!-- In the actual file, all 11 colors (indigo, purple, pink, red, orange, yellow, green, teal, cyan, gray) would be included -->
-      
+      <!-- Indigo -->
+      <div class="color-group">
+        <div class="color-name">🟣 Indigo</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-100')">
+            <div class="shade-color bg-indigo-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 100</div>
+              <div class="shade-class">.bg-indigo-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-200')">
+            <div class="shade-color bg-indigo-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 200</div>
+              <div class="shade-class">.bg-indigo-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-300')">
+            <div class="shade-color bg-indigo-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 300</div>
+              <div class="shade-class">.bg-indigo-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-400')">
+            <div class="shade-color bg-indigo-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 400</div>
+              <div class="shade-class">.bg-indigo-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-500')">
+            <div class="shade-color bg-indigo-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 500</div>
+              <div class="shade-class">.bg-indigo-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-600')">
+            <div class="shade-color bg-indigo-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 600</div>
+              <div class="shade-class">.bg-indigo-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-700')">
+            <div class="shade-color bg-indigo-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 700</div>
+              <div class="shade-class">.bg-indigo-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-800')">
+            <div class="shade-color bg-indigo-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 800</div>
+              <div class="shade-class">.bg-indigo-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-indigo-900')">
+            <div class="shade-color bg-indigo-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Indigo 900</div>
+              <div class="shade-class">.bg-indigo-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Purple -->
+      <div class="color-group">
+        <div class="color-name">🟪 Purple</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-100')">
+            <div class="shade-color bg-purple-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 100</div>
+              <div class="shade-class">.bg-purple-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-200')">
+            <div class="shade-color bg-purple-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 200</div>
+              <div class="shade-class">.bg-purple-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-300')">
+            <div class="shade-color bg-purple-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 300</div>
+              <div class="shade-class">.bg-purple-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-400')">
+            <div class="shade-color bg-purple-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 400</div>
+              <div class="shade-class">.bg-purple-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-500')">
+            <div class="shade-color bg-purple-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 500</div>
+              <div class="shade-class">.bg-purple-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-600')">
+            <div class="shade-color bg-purple-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 600</div>
+              <div class="shade-class">.bg-purple-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-700')">
+            <div class="shade-color bg-purple-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 700</div>
+              <div class="shade-class">.bg-purple-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-800')">
+            <div class="shade-color bg-purple-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 800</div>
+              <div class="shade-class">.bg-purple-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-purple-900')">
+            <div class="shade-color bg-purple-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Purple 900</div>
+              <div class="shade-class">.bg-purple-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pink -->
+      <div class="color-group">
+        <div class="color-name">🩷 Pink</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-100')">
+            <div class="shade-color bg-pink-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 100</div>
+              <div class="shade-class">.bg-pink-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-200')">
+            <div class="shade-color bg-pink-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 200</div>
+              <div class="shade-class">.bg-pink-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-300')">
+            <div class="shade-color bg-pink-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 300</div>
+              <div class="shade-class">.bg-pink-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-400')">
+            <div class="shade-color bg-pink-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 400</div>
+              <div class="shade-class">.bg-pink-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-500')">
+            <div class="shade-color bg-pink-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 500</div>
+              <div class="shade-class">.bg-pink-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-600')">
+            <div class="shade-color bg-pink-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 600</div>
+              <div class="shade-class">.bg-pink-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-700')">
+            <div class="shade-color bg-pink-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 700</div>
+              <div class="shade-class">.bg-pink-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-800')">
+            <div class="shade-color bg-pink-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 800</div>
+              <div class="shade-class">.bg-pink-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-pink-900')">
+            <div class="shade-color bg-pink-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Pink 900</div>
+              <div class="shade-class">.bg-pink-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Red -->
+      <div class="color-group">
+        <div class="color-name">🔴 Red</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-100')">
+            <div class="shade-color bg-red-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Red 100</div>
+              <div class="shade-class">.bg-red-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-200')">
+            <div class="shade-color bg-red-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Red 200</div>
+              <div class="shade-class">.bg-red-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-300')">
+            <div class="shade-color bg-red-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Red 300</div>
+              <div class="shade-class">.bg-red-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-400')">
+            <div class="shade-color bg-red-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Red 400</div>
+              <div class="shade-class">.bg-red-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-500')">
+            <div class="shade-color bg-red-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Red 500</div>
+              <div class="shade-class">.bg-red-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-600')">
+            <div class="shade-color bg-red-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Red 600</div>
+              <div class="shade-class">.bg-red-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-700')">
+            <div class="shade-color bg-red-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Red 700</div>
+              <div class="shade-class">.bg-red-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-800')">
+            <div class="shade-color bg-red-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Red 800</div>
+              <div class="shade-class">.bg-red-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-red-900')">
+            <div class="shade-color bg-red-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Red 900</div>
+              <div class="shade-class">.bg-red-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orange -->
+      <div class="color-group">
+        <div class="color-name">🟠 Orange</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-100')">
+            <div class="shade-color bg-orange-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 100</div>
+              <div class="shade-class">.bg-orange-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-200')">
+            <div class="shade-color bg-orange-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 200</div>
+              <div class="shade-class">.bg-orange-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-300')">
+            <div class="shade-color bg-orange-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 300</div>
+              <div class="shade-class">.bg-orange-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-400')">
+            <div class="shade-color bg-orange-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 400</div>
+              <div class="shade-class">.bg-orange-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-500')">
+            <div class="shade-color bg-orange-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 500</div>
+              <div class="shade-class">.bg-orange-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-600')">
+            <div class="shade-color bg-orange-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 600</div>
+              <div class="shade-class">.bg-orange-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-700')">
+            <div class="shade-color bg-orange-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 700</div>
+              <div class="shade-class">.bg-orange-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-800')">
+            <div class="shade-color bg-orange-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 800</div>
+              <div class="shade-class">.bg-orange-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-orange-900')">
+            <div class="shade-color bg-orange-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Orange 900</div>
+              <div class="shade-class">.bg-orange-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yellow -->
+      <div class="color-group">
+        <div class="color-name">🟡 Yellow</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-100')">
+            <div class="shade-color bg-yellow-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 100</div>
+              <div class="shade-class">.bg-yellow-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-200')">
+            <div class="shade-color bg-yellow-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 200</div>
+              <div class="shade-class">.bg-yellow-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-300')">
+            <div class="shade-color bg-yellow-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 300</div>
+              <div class="shade-class">.bg-yellow-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-400')">
+            <div class="shade-color bg-yellow-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 400</div>
+              <div class="shade-class">.bg-yellow-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-500')">
+            <div class="shade-color bg-yellow-500">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 500</div>
+              <div class="shade-class">.bg-yellow-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-600')">
+            <div class="shade-color bg-yellow-600">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 600</div>
+              <div class="shade-class">.bg-yellow-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-700')">
+            <div class="shade-color bg-yellow-700">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 700</div>
+              <div class="shade-class">.bg-yellow-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-800')">
+            <div class="shade-color bg-yellow-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 800</div>
+              <div class="shade-class">.bg-yellow-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-yellow-900')">
+            <div class="shade-color bg-yellow-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Yellow 900</div>
+              <div class="shade-class">.bg-yellow-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Green -->
+      <div class="color-group">
+        <div class="color-name">🟢 Green</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-100')">
+            <div class="shade-color bg-green-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Green 100</div>
+              <div class="shade-class">.bg-green-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-200')">
+            <div class="shade-color bg-green-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Green 200</div>
+              <div class="shade-class">.bg-green-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-300')">
+            <div class="shade-color bg-green-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Green 300</div>
+              <div class="shade-class">.bg-green-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-400')">
+            <div class="shade-color bg-green-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Green 400</div>
+              <div class="shade-class">.bg-green-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-500')">
+            <div class="shade-color bg-green-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Green 500</div>
+              <div class="shade-class">.bg-green-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-600')">
+            <div class="shade-color bg-green-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Green 600</div>
+              <div class="shade-class">.bg-green-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-700')">
+            <div class="shade-color bg-green-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Green 700</div>
+              <div class="shade-class">.bg-green-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-800')">
+            <div class="shade-color bg-green-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Green 800</div>
+              <div class="shade-class">.bg-green-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-green-900')">
+            <div class="shade-color bg-green-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Green 900</div>
+              <div class="shade-class">.bg-green-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teal -->
+      <div class="color-group">
+        <div class="color-name">🩵 Teal</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-100')">
+            <div class="shade-color bg-teal-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 100</div>
+              <div class="shade-class">.bg-teal-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-200')">
+            <div class="shade-color bg-teal-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 200</div>
+              <div class="shade-class">.bg-teal-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-300')">
+            <div class="shade-color bg-teal-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 300</div>
+              <div class="shade-class">.bg-teal-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-400')">
+            <div class="shade-color bg-teal-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 400</div>
+              <div class="shade-class">.bg-teal-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-500')">
+            <div class="shade-color bg-teal-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 500</div>
+              <div class="shade-class">.bg-teal-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-600')">
+            <div class="shade-color bg-teal-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 600</div>
+              <div class="shade-class">.bg-teal-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-700')">
+            <div class="shade-color bg-teal-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 700</div>
+              <div class="shade-class">.bg-teal-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-800')">
+            <div class="shade-color bg-teal-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 800</div>
+              <div class="shade-class">.bg-teal-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-teal-900')">
+            <div class="shade-color bg-teal-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Teal 900</div>
+              <div class="shade-class">.bg-teal-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cyan -->
+      <div class="color-group">
+        <div class="color-name">🩵 Cyan</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-100')">
+            <div class="shade-color bg-cyan-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 100</div>
+              <div class="shade-class">.bg-cyan-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-200')">
+            <div class="shade-color bg-cyan-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 200</div>
+              <div class="shade-class">.bg-cyan-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-300')">
+            <div class="shade-color bg-cyan-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 300</div>
+              <div class="shade-class">.bg-cyan-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-400')">
+            <div class="shade-color bg-cyan-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 400</div>
+              <div class="shade-class">.bg-cyan-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-500')">
+            <div class="shade-color bg-cyan-500">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 500</div>
+              <div class="shade-class">.bg-cyan-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-600')">
+            <div class="shade-color bg-cyan-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 600</div>
+              <div class="shade-class">.bg-cyan-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-700')">
+            <div class="shade-color bg-cyan-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 700</div>
+              <div class="shade-class">.bg-cyan-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-800')">
+            <div class="shade-color bg-cyan-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 800</div>
+              <div class="shade-class">.bg-cyan-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-cyan-900')">
+            <div class="shade-color bg-cyan-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Cyan 900</div>
+              <div class="shade-class">.bg-cyan-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gray -->
+      <div class="color-group">
+        <div class="color-name">⚪ Gray</div>
+        <div class="shade-grid">
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-100')">
+            <div class="shade-color bg-gray-100"></div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 100</div>
+              <div class="shade-class">.bg-gray-100</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-200')">
+            <div class="shade-color bg-gray-200"></div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 200</div>
+              <div class="shade-class">.bg-gray-200</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-300')">
+            <div class="shade-color bg-gray-300"></div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 300</div>
+              <div class="shade-class">.bg-gray-300</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-400')">
+            <div class="shade-color bg-gray-400"></div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 400</div>
+              <div class="shade-class">.bg-gray-400</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-500')">
+            <div class="shade-color bg-gray-500 text-white">500</div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 500</div>
+              <div class="shade-class">.bg-gray-500</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-600')">
+            <div class="shade-color bg-gray-600 text-white">600</div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 600</div>
+              <div class="shade-class">.bg-gray-600</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-700')">
+            <div class="shade-color bg-gray-700 text-white">700</div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 700</div>
+              <div class="shade-class">.bg-gray-700</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-800')">
+            <div class="shade-color bg-gray-800 text-white">800</div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 800</div>
+              <div class="shade-class">.bg-gray-800</div>
+            </div>
+          </div>
+          <div class="shade-card" onclick="copyToClipboard('.bg-gray-900')">
+            <div class="shade-color bg-gray-900 text-white">900</div>
+            <div class="shade-info">
+              <div class="shade-label">Gray 900</div>
+              <div class="shade-class">.bg-gray-900</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Other tabs content truncated for brevity -->
+    <!-- Tab: Text Utilities -->
+    <div id="tab-text" class="tab-content">
+      <h2 class="section-title">Text Color Utilities</h2>
+      <p>Use <code>.text-{color}-{shade}</code> to apply text colors. All 99 shades available.</p>
+      
+      <h3 class="color-name" style="margin-top: 2rem;">Quick Reference - All Colors (Shade 600)</h3>
+      <div class="utility-examples">
+        <div class="utility-demo text-blue-600">Blue 600 text</div>
+        <div class="utility-demo text-indigo-600">Indigo 600 text</div>
+        <div class="utility-demo text-purple-700">Purple 700 text</div>
+        <div class="utility-demo text-pink-600">Pink 600 text</div>
+        <div class="utility-demo text-red-600">Red 600 text</div>
+        <div class="utility-demo text-orange-600">Orange 600 text</div>
+        <div class="utility-demo text-yellow-700">Yellow 700 text</div>
+        <div class="utility-demo text-green-600">Green 600 text</div>
+        <div class="utility-demo text-teal-600">Teal 600 text</div>
+        <div class="utility-demo text-cyan-600">Cyan 600 text</div>
+        <div class="utility-demo text-gray-700">Gray 700 text</div>
+      </div>
 
+      <h3 class="color-name" style="margin-top: 3rem;">Complete Blue Text Variations</h3>
+      <div style="background: white; padding: 2rem; border-radius: 8px; border: 1px solid #dee2e6;">
+        <p class="text-blue-100 bg-dark p-2 rounded mb-2">This is blue-100 text (lightest - needs dark background)</p>
+        <p class="text-blue-200 bg-dark p-2 rounded mb-2">This is blue-200 text</p>
+        <p class="text-blue-300 mb-2">This is blue-300 text</p>
+        <p class="text-blue-400 mb-2">This is blue-400 text</p>
+        <p class="text-blue-500 mb-2">This is blue-500 text</p>
+        <p class="text-blue-600 mb-2">This is blue-600 text</p>
+        <p class="text-blue-700 mb-2">This is blue-700 text</p>
+        <p class="text-blue-800 mb-2">This is blue-800 text</p>
+        <p class="text-blue-900 mb-0">This is blue-900 text (darkest)</p>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Practical Text Examples</h3>
+      <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px;">
+        <h4 class="text-blue-700">Headings with Color</h4>
+        <p class="text-gray-600">Body text in gray-600 for optimal readability.</p>
+        <p class="text-green-600">Success message in green-600</p>
+        <p class="text-red-600">Error message in red-600</p>
+        <p class="text-orange-600">Warning message in orange-600</p>
+        <p class="text-blue-600 mb-0">Info message in blue-600</p>
+      </div>
+    </div>
+
+    <!-- Tab: Background Utilities -->
+    <div id="tab-background" class="tab-content">
+      <h2 class="section-title">Background Color Utilities</h2>
+      <p>Use <code>.bg-{color}-{shade}</code> to apply background colors. Combine with text colors for contrast.</p>
+      
+      <h3 class="color-name" style="margin-top: 2rem;">Light Backgrounds</h3>
+      <div class="utility-examples">
+        <div class="utility-demo bg-blue-100">Blue 100</div>
+        <div class="utility-demo bg-indigo-200">Indigo 200</div>
+        <div class="utility-demo bg-purple-200">Purple 200</div>
+        <div class="utility-demo bg-pink-200">Pink 200</div>
+        <div class="utility-demo bg-red-100">Red 100</div>
+        <div class="utility-demo bg-orange-100">Orange 100</div>
+        <div class="utility-demo bg-yellow-100">Yellow 100</div>
+        <div class="utility-demo bg-green-100">Green 100</div>
+        <div class="utility-demo bg-teal-100">Teal 100</div>
+        <div class="utility-demo bg-cyan-100">Cyan 100</div>
+        <div class="utility-demo bg-gray-200">Gray 200</div>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Dark Backgrounds with Light Text</h3>
+      <div class="utility-examples">
+        <div class="utility-demo bg-blue-700 text-white">Blue 700</div>
+        <div class="utility-demo bg-indigo-700 text-white">Indigo 700</div>
+        <div class="utility-demo bg-purple-700 text-white">Purple 700</div>
+        <div class="utility-demo bg-pink-700 text-white">Pink 700</div>
+        <div class="utility-demo bg-red-700 text-white">Red 700</div>
+        <div class="utility-demo bg-orange-700 text-white">Orange 700</div>
+        <div class="utility-demo bg-yellow-700 text-white">Yellow 700</div>
+        <div class="utility-demo bg-green-700 text-white">Green 700</div>
+        <div class="utility-demo bg-teal-700 text-white">Teal 700</div>
+        <div class="utility-demo bg-cyan-700 text-white">Cyan 700</div>
+        <div class="utility-demo bg-gray-800 text-white">Gray 800</div>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Practical Background Examples</h3>
+      <div style="display: grid; gap: 1rem;">
+        <div class="bg-blue-100 text-blue-900 p-3 rounded">
+          <strong>Info Alert:</strong> This is an informational message with blue-100 background.
+        </div>
+        <div class="bg-green-100 text-green-900 p-3 rounded">
+          <strong>Success Alert:</strong> This is a success message with green-100 background.
+        </div>
+        <div class="bg-yellow-100 text-yellow-900 p-3 rounded">
+          <strong>Warning Alert:</strong> This is a warning message with yellow-100 background.
+        </div>
+        <div class="bg-red-100 text-red-900 p-3 rounded">
+          <strong>Error Alert:</strong> This is an error message with red-100 background.
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Chip Utilities -->
+    <div id="tab-chips" class="tab-content">
+      <h2 class="section-title">Chip/Badge Utilities</h2>
+      
+      <h3 class="color-name">.text-bg-* Classes (Auto-Contrast)</h3>
+      <p>These classes automatically choose readable text color based on background lightness. Perfect for badges and chips!</p>
+      
+      <h4 style="font-size: 1.125rem; font-weight: 600; margin-top: 2rem; color: #495057;">Blue - All Shades</h4>
+      <div style="margin-bottom: 2rem;">
+        <span class="chip-demo text-bg-blue-100">Blue 100</span>
+        <span class="chip-demo text-bg-blue-200">Blue 200</span>
+        <span class="chip-demo text-bg-blue-300">Blue 300</span>
+        <span class="chip-demo text-bg-blue-400">Blue 400</span>
+        <span class="chip-demo text-bg-blue-500">Blue 500</span>
+        <span class="chip-demo text-bg-blue-600">Blue 600</span>
+        <span class="chip-demo text-bg-blue-700">Blue 700</span>
+        <span class="chip-demo text-bg-blue-800">Blue 800</span>
+        <span class="chip-demo text-bg-blue-900">Blue 900</span>
+      </div>
+
+      <h4 style="font-size: 1.125rem; font-weight: 600; margin-top: 2rem; color: #495057;">All Colors (Shade 500)</h4>
+      <div style="margin-bottom: 2rem;">
+        <span class="chip-demo text-bg-blue-500">Blue</span>
+        <span class="chip-demo text-bg-indigo-500">Indigo</span>
+        <span class="chip-demo text-bg-purple-500">Purple</span>
+        <span class="chip-demo text-bg-pink-500">Pink</span>
+        <span class="chip-demo text-bg-red-500">Red</span>
+        <span class="chip-demo text-bg-orange-500">Orange</span>
+        <span class="chip-demo text-bg-yellow-500">Yellow</span>
+        <span class="chip-demo text-bg-green-500">Green</span>
+        <span class="chip-demo text-bg-teal-500">Teal</span>
+        <span class="chip-demo text-bg-cyan-500">Cyan</span>
+        <span class="chip-demo text-bg-gray-500">Gray</span>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">.text-outline-* Classes (Outline Style)</h3>
+      <p>Outlined chips with transparent background - great for tag selections!</p>
+      <div style="margin-bottom: 2rem;">
+        <span class="chip-demo text-outline-blue-500">Blue</span>
+        <span class="chip-demo text-outline-indigo-500">Indigo</span>
+        <span class="chip-demo text-outline-purple-500">Purple</span>
+        <span class="chip-demo text-outline-pink-500">Pink</span>
+        <span class="chip-demo text-outline-red-500">Red</span>
+        <span class="chip-demo text-outline-orange-500">Orange</span>
+        <span class="chip-demo text-outline-yellow-700">Yellow</span>
+        <span class="chip-demo text-outline-green-500">Green</span>
+        <span class="chip-demo text-outline-teal-500">Teal</span>
+        <span class="chip-demo text-outline-cyan-500">Cyan</span>
+        <span class="chip-demo text-outline-gray-700">Gray</span>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Practical Chip Examples</h3>
+      <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px;">
+        <h4 style="font-size: 1rem; margin-bottom: 1rem;">Status Badges:</h4>
+        <span class="chip-demo text-bg-green-500">✓ Active</span>
+        <span class="chip-demo text-bg-yellow-500">⏳ Pending</span>
+        <span class="chip-demo text-bg-red-500">✕ Inactive</span>
+        <span class="chip-demo text-bg-blue-500">📝 Draft</span>
+
+        <h4 style="font-size: 1rem; margin-top: 2rem; margin-bottom: 1rem;">Category Tags:</h4>
+        <span class="chip-demo text-bg-purple-500">Design</span>
+        <span class="chip-demo text-bg-blue-500">Development</span>
+        <span class="chip-demo text-bg-cyan-500">Marketing</span>
+        <span class="chip-demo text-bg-orange-500">Sales</span>
+
+        <h4 style="font-size: 1rem; margin-top: 2rem; margin-bottom: 1rem;">Priority Labels:</h4>
+        <span class="chip-demo text-bg-red-600">High Priority</span>
+        <span class="chip-demo text-bg-orange-500">Medium Priority</span>
+        <span class="chip-demo text-bg-green-500">Low Priority</span>
+      </div>
+    </div>
+
+    <!-- Tab: Border Utilities -->
+    <div id="tab-borders" class="tab-content">
+      <h2 class="section-title">Border Color Utilities</h2>
+      <p>Use <code>.border-{color}-{shade}</code> to apply border colors. Combine with Bootstrap's <code>.border</code> class.</p>
+      
+      <h3 class="color-name" style="margin-top: 2rem;">Basic Border Colors (Shade 500)</h3>
+      <div class="utility-examples">
+        <div class="utility-demo border border-2 border-blue-500">Blue 500</div>
+        <div class="utility-demo border border-2 border-indigo-500">Indigo 500</div>
+        <div class="utility-demo border border-2 border-purple-500">Purple 500</div>
+        <div class="utility-demo border border-2 border-pink-500">Pink 500</div>
+        <div class="utility-demo border border-2 border-red-500">Red 500</div>
+        <div class="utility-demo border border-2 border-orange-500">Orange 500</div>
+        <div class="utility-demo border border-2 border-yellow-500">Yellow 500</div>
+        <div class="utility-demo border border-2 border-green-500">Green 500</div>
+        <div class="utility-demo border border-2 border-teal-500">Teal 500</div>
+        <div class="utility-demo border border-2 border-cyan-500">Cyan 500</div>
+        <div class="utility-demo border border-2 border-gray-500">Gray 500</div>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Thick Borders (border-3)</h3>
+      <div class="utility-examples">
+        <div class="utility-demo border border-3 border-blue-600">Blue 600</div>
+        <div class="utility-demo border border-3 border-indigo-600">Indigo 600</div>
+        <div class="utility-demo border border-3 border-purple-600">Purple 600</div>
+        <div class="utility-demo border border-3 border-pink-600">Pink 600</div>
+        <div class="utility-demo border border-3 border-red-600">Red 600</div>
+        <div class="utility-demo border border-3 border-green-600">Green 600</div>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Practical Border Examples</h3>
+      <div style="display: grid; gap: 1.5rem;">
+        <div class="bg-white border border-3 border-blue-500 p-3 rounded">
+          <h4 class="text-blue-700" style="margin-bottom: 0.5rem;">Card with Blue Border</h4>
+          <p style="margin: 0; color: #6c757d;">Content inside a card with a blue-500 border.</p>
+        </div>
+        <div class="bg-green-50 border border-2 border-green-400 p-3 rounded">
+          <h4 class="text-green-800" style="margin-bottom: 0.5rem;">Success Card</h4>
+          <p style="margin: 0; color: #198754;">Green background with green-400 border for success states.</p>
+        </div>
+        <div class="bg-red-50 border border-2 border-red-400 p-3 rounded">
+          <h4 class="text-red-800" style="margin-bottom: 0.5rem;">Error Card</h4>
+          <p style="margin: 0; color: #dc3545;">Red background with red-400 border for error states.</p>
+        </div>
+      </div>
+
+      <h3 class="color-name" style="margin-top: 3rem;">Border Variations</h3>
+      <p>All shades work with directional borders too:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+        <div class="bg-light p-3 border-start border-5 border-blue-600 rounded">
+          <code>.border-start</code>
+        </div>
+        <div class="bg-light p-3 border-end border-5 border-purple-600 rounded">
+          <code>.border-end</code>
+        </div>
+        <div class="bg-light p-3 border-top border-5 border-green-600 rounded">
+          <code>.border-top</code>
+        </div>
+        <div class="bg-light p-3 border-bottom border-5 border-red-600 rounded">
+          <code>.border-bottom</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Usage Tips -->
     <div class="mt-5 p-4 bg-light rounded">
       <h4>💡 Usage Tips</h4>
-      <ul>
+      <ul style="margin-bottom: 0;">
         <li>Load order matters: Import Bootstrap CSS first, then <code>colors.css</code></li>
         <li>All utilities use <code>!important</code> to ensure they override other styles</li>
-        <li>Use <code>.text-bg-*</code> for automatic text color contrast</li>
-        <li>Combine utilities: <code>class="bg-blue-100 text-blue-900 border border-blue-500"</code></li>
+        <li>Use <code>.text-bg-*</code> for automatic text color contrast - great for badges!</li>
+        <li>Combine utilities: <code>class="bg-blue-100 text-blue-900 border border-blue-500 rounded p-3"</code></li>
+        <li>For accessibility, maintain at least 4.5:1 contrast ratio for text</li>
+        <li>Lighter shades (100-300) work best for backgrounds</li>
+        <li>Darker shades (700-900) work best for text on light backgrounds</li>
         <li>See <code>COLORS-GUIDE.md</code> for complete documentation</li>
       </ul>
+    </div>
+
+    <!-- Footer Stats -->
+    <div class="text-center py-4 mt-4" style="border-top: 2px solid #dee2e6;">
+      <p class="mb-1" style="font-size: 1.125rem; font-weight: 600;">
+        <strong>495 Color Utilities</strong> • 11 Colors × 9 Shades × 5 Utility Types
+      </p>
+      <p class="mb-0" style="color: #6c757d;">
+        Generated from Bootstrap 5.3 Sass maps • Auto-contrast text colors • All utilities additive
+      </p>
     </div>
   </div>
 
@@ -301,7 +1250,17 @@
       // Set active nav link
       event.target.classList.add('active');
     }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        // Create temporary toast notification
+        const toast = document.createElement('div');
+        toast.textContent = `Copied: ${text}`;
+        toast.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#28a745;color:white;padding:1rem 1.5rem;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,0.1);z-index:9999;font-weight:500;';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+      });
+    }
   </script>
 </body>
 </html>
-
